@@ -9,20 +9,18 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <style>
-      @layer base {
-        body {
-          font-family: "Inter", sans-serif;
-        }
-      }
-    </style>
-    <title>Bitez</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <title>{{ title | default("Bitez") }}</title>
   </head>
-  <body>
+  <body class="bg-muted flex flex-col gap-18">
+    {% include "partials/navigation.njk" %}
+
+    {{ content | safe }}
+
+    {% include "partials/footer.njk" %}
+
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-      lucide.createIcons()
-    </script>
+		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+		<script src="./js/global.js"></script>
   </body>
 </html>

@@ -1,0 +1,29 @@
+{
+  "name": "bitez-landing-page",
+  "version": "1.0.0",
+  "description": "Marketing pro restaurace - Bitez landing page",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inago-Digital/bitez-landing-page.git"
+  },
+  "keywords": [
+    "restaurant",
+    "marketing",
+    "landing-page"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Inago-Digital/bitez-landing-page/issues"
+  },
+  "homepage": "https://github.com/Inago-Digital/bitez-landing-page#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0"
+  }
+}
