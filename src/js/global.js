@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
           dark: "#1c1c1c",
           light: "#e1e9ee",
           gray: "#c7Ceda",
+          "light-gray": "#D0D7EF",
           muted: {
             DEFAULT: "#d6e1e8",
             dark: "#c6d6e1",
