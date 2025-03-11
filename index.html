@@ -74,17 +74,116 @@
   </head>
   <body class="bg-muted flex flex-col gap-18">
     <nav
-  class="bg-white flex items-center justify-between p-4 px-6 rounded-full fixed top-2 left-2 z-100 w-[calc(100%-1rem)] shadow-xl"
+  data-navigation
+  class="bg-white shadow-xl flex items-center justify-between p-4 px-6 rounded-full fixed top-2 left-2 z-100 w-[calc(100%-1rem)]"
 >
   <a href="/">
-    <img src="./assets/logo/bitez_logo_cervena.svg" alt="Bitez" class="h-auto w-30" />
+    <img
+      src="./assets/logo/bitez_logo_cervena.svg"
+      alt="Bitez"
+      class="h-auto w-30"
+    />
   </a>
-  <div class="flex flex-col gap-1.5 cursor-pointer md:hidden">
-    <div class="h-1 w-8 bg-primary rounded-full"></div>
-    <div class="h-1 w-8 bg-primary rounded-full"></div>
-    <div class="h-1 w-8 bg-primary rounded-full"></div>
+  <div class="hidden md:flex items-center gap-6">
+    <a
+      href="/#features"
+      class="text-tertiary hover:text-primary transition-colors"
+      >Features</a
+    >
+    <a
+      href="/#pricing"
+      class="text-tertiary hover:text-primary transition-colors"
+      >Pricing</a
+    >
+    <a href="/#faq" class="text-tertiary hover:text-primary transition-colors"
+      >FAQ</a
+    >
+    <a
+      href="/contact"
+      class="text-tertiary hover:text-primary transition-colors"
+      >Contact</a
+    >
+    <a
+      href="/login"
+      class="bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary transition-colors"
+      >Login</a
+    >
+  </div>
+  <div
+    data-mobile-menu-toggle
+    class="flex flex-col gap-1.5 cursor-pointer md:hidden"
+  >
+    <div class="h-1 w-8 bg-primary rounded-full transition-all"></div>
+    <div class="h-1 w-8 bg-primary rounded-full transition-all"></div>
+    <div class="h-1 w-8 bg-primary rounded-full transition-all"></div>
   </div>
 </nav>
+
+<div
+  data-mobile-menu
+  class="fixed inset-0 bg-muted hidden flex-col items-center gap-6 p-5 z-50"
+>
+  <div class="flex flex-col items-center gap-3 text-xl w-full font-champ pt-24">
+    <a
+      href="/"
+      class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+      >Home
+      <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+    </a>
+    <a
+      href="/how-does-it-work"
+      class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+      >Jak to funguje
+      <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+    </a>
+    <a
+      href="/pricing"
+      class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+      >Ceny
+      <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+    </a>
+    <a
+      href="/contact"
+      class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+      >Kontakt
+      <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+    </a>
+    <a
+      href="/faq"
+      class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+      >Časté dotazy
+      <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+    </a>
+    <a
+      href="#"
+      class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+      >⭐ Inventura Instagramu
+      <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+    </a>
+  </div>
+
+  <p class="text-2xl text-primary font-champ underline mt-4">
+    Stáhněte si aplikaci
+  </p>
+  <ul class="flex flex-col gap-2">
+    <li>
+      <a href="#">
+        <img
+          src="./assets/graphic/app-store-badge.png"
+          alt="App Store"
+          class="h-auto w-40"
+      /></a>
+    </li>
+    <li>
+      <a href="#">
+        <img
+          src="./assets/graphic/google-play-badge.png"
+          alt="Google Play"
+          class="h-auto w-40"
+      /></a>
+    </li>
+  </ul>
+</div>
 
 
     
@@ -643,7 +742,7 @@
       <li>
         <a href="#">
           <img
-            src="./assets/graphic/GetItOnGooglePlay_Badge_Web_color_English.png"
+            src="./assets/graphic/google-play-badge.png"
             alt="Get it on Google Play"
             class="hauto w-40"
           />
@@ -652,7 +751,7 @@
       <li>
         <a href="#">
           <img
-            src="./assets/graphic/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.png"
+            src="./assets/graphic/app-store-badge.png"
             alt="Download on the App Store"
             class="h-auto w-40"
           />
