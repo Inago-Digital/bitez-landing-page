@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
       `
 
       try {
-        const response = await fetch("https://email.hangerthem.com", {
+        const response = await fetch("https://email.hangerthem.com/send", {
           method: "POST",
           body: JSON.stringify({
             name: data.name,
