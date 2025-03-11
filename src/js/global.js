@@ -161,6 +161,9 @@ document.addEventListener("DOMContentLoaded", function () {
             message,
             subject: "Nová zpráva z Bitez",
           }),
+          headers: {
+            "Content-Type": "application/json",
+          },
         })
 
         if (response.ok) {
