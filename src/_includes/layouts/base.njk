@@ -72,7 +72,9 @@
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
   </head>
-  <body class="bg-muted flex flex-col gap-18">
+  <body
+    class="{% if not '/faq' in page.url %}bg-muted{% endif %} flex flex-col gap-18"
+  >
     {% include "partials/navigation.njk" %}
 
     {{ content | safe }}

@@ -27,5 +27,56 @@
         "answer": "Neuvidíme. Máme přístup pouze do profilů vaší restaurace. Do vašeho osobního profilu nám přístup nedáváte a my se do něj nemůžeme nijak dostat. Vaše soukromé zprávy tak jsou v maximálním bezpečí."
       }
     ]
+  },
+  "application": {
+    "title": "Aplikace",
+    "questions": [
+      {
+        "question": "Mohu si aplikace nejprve vyzkoušet?",
+        "answer": "Ano. Aplikaci si můžete zdarma stáhnout na App Store nebo Google Play a vyzkoušet si demo. V něm najdete předvyplněný profil vzorové restaurace, ve které si můžete aplikace prohlédnout a vyzkoušet."
+      },
+      {
+        "question": "Kdy získám přístupy do aplikace a kontakt na správce?",
+        "answer": "Přístupy do aplikace vám budou poslány na email po uzavření spolupráce. Po přihlášení do aplikace můžete ihned začít komunikovat se správcem vašich sociálních sítí. Přihlášení do apliakce je jednoduché a zároveň bezpečné. Potřebujete k němu pouze telefonní číslo a ověřovací kód, který vám zašleme do SMS."
+      },
+      {
+        "question": "Jak dlouho jsou v aplikace uloženy fotografie a videa?",
+        "answer": "Fotografie a videa které pro vás připravíme jsou v aplikace dostupné po celou dobu naší spolupráce. Více o pravidelech k dalšímu užívání fotografií a videí se dočtete v Obchodních podmínkách."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Ceny a platby",
+    "questions": [
+      {
+        "question": "Mohu si v průběhu změnit tarif?",
+        "answer": "Ano, váš měsíční tarif si můžete kdykoliv změnit podle potřeb. Díky týdenním platbám tak můžete učinit v průběhu měsíce a nový plán začíná platit okamžitě. V případě, že potřebujete jednorázovou věc, budou pro vás vhodnější jednorázové vícepráce, které vám spočítá vaše přidělená asistentka a zašle fakturu na přímo."
+      },
+      {
+        "question": "Je kredit na sponzoring součástí měsíčního baličku?",
+        "answer": "Kredity pro sponzorování příspěvků nejsou součástí měsíčního tarifu. Kredity je potřeba čerpat skrze vaší firemní nebo osobní kartu, kterou s vámi na dané sociální síti napojíme při zahájení spolupráce. S vaší asistentkou si stanovíte, s jakým rozpočtem chcete příspěvky propagovat a poté se platby strhávají přímo z vašeho účtu."
+      }
+    ]
+  },
+  "other": {
+    "title": "Další otázky",
+    "questions": [
+      {
+        "question": "Komu patří fotografie a videa které pro vás uděláme?",
+        "answer": "Výstupy, které budou během naší spolupráce realizovány patří vám a můžete je libovolně používat pro další účely, jakmile dokončíte plný měsíc spolupráce, ve kterém byly pořízeny. Detailní informace najdete v našich obchodních podmínkách."
+      },
+      {
+        "question": "Bude můj obsah autentický?",
+        "answer": "Každému podniku dáváme autentickou tvář, která k němu sedí nejlíp. Před zahájením publikace od nás dostanete návrh stylu fotografií, grafiky a dalších materiálů společně s naším doporučením. Vy si poté už jen vyberete, která cesta se vám líbí nejvíce."
+      },
+      {
+        "question": "Dokážete zaškolit personál?",
+        "answer": "S vaší pomocí bude všechno lepší! Součástí návštěvy fotografa je také školení, ve kterém vám ukáže, jak snadno a vkusně nafotit všechny potřebné věci, abyste se vším nemuseli čekat na jeho další návštěvu. Součástí našich balíčků je také edukace v podobě video návodů, rad a tipů, trendů a dalších užitečných věcí. Každý měsíc vám pošleme to, co ve vaší oblasti z hlediska marketingu frčí, abyste zůstali v aktuálním obraze."
+      },
+      {
+        "question": "Píše příspěvky reálný člověk?",
+        "answer": "Za každým příspěvkem, fotkou nebo videem stojí živý člověk. Ten se stará o vaše sociální sítě a je s vámi v kontaktu. Na vašich sociálních sítích se tedy vždy objeví reálné fotky a texty od marketingového specialisty."
+      }
+    ]
   }
 }
