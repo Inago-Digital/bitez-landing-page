@@ -145,12 +145,16 @@ document.addEventListener("DOMContentLoaded", function () {
       contactFormSubmit.disabled = true
       contactFormSubmit.textContent = "Sending..."
 
-      const message = `
-      Name: ${data.name}
-      Email: ${data.email}
-      Phone: ${data.phone}
-      Company: ${data.company}
-      `
+      let htmlTemplate = ""
+      try {
+        if (typeof generateEmailTemplate === "function") {
+          htmlTemplate = generateEmailTemplate(data)
+        }
+      } catch (e) {
+        console.log("Email template generator not loaded")
+      }
+
+      console.log(htmlTemplate)
 
       try {
         const response = await fetch("https://email.hangerthem.com/send", {
@@ -158,8 +162,16 @@ document.addEventListener("DOMContentLoaded", function () {
           body: JSON.stringify({
             name: data.name,
             email: data.email,
-            message,
+            message:
+              htmlTemplate ||
+              `
+Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone}
+Company: ${data.company}
+`,
             subject: "Nová zpráva z Bitez",
+            html: htmlTemplate || undefined,
           }),
           headers: {
             "Content-Type": "application/json",
