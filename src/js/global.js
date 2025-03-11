@@ -115,4 +115,66 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     })
   })
+
+  const contactForm = document.querySelector("[data-contact-form]")
+  const contactFormSubmit = document.querySelector("[data-contact-form-submit]")
+  const contactFormInputs = document.querySelectorAll(
+    "[data-contact-form-input]"
+  )
+
+  if (contactForm && contactFormSubmit) {
+    contactFormSubmit.addEventListener("click", async (e) => {
+      e.preventDefault()
+
+      const data = {}
+
+      contactFormInputs.forEach((input) => {
+        data[input.name] = input.value
+      })
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+      if (!emailRegex.test(data.email)) {
+        return alert("Please enter a valid email address.")
+      }
+
+      if (!data.name || !data.email || !data.phone || !data.company) {
+        return alert("Please fill out all fields.")
+      }
+
+      contactFormSubmit.disabled = true
+      contactFormSubmit.textContent = "Sending..."
+
+      const message = `
+      Name: ${data.name}
+      Email: ${data.email}
+      Phone: ${data.phone}
+      Company: ${data.company}
+      `
+
+      try {
+        const response = await fetch("https://email.hangerthem.com", {
+          method: "POST",
+          body: JSON.stringify({
+            name: data.name,
+            email: data.email,
+            message,
+            subject: "Nová zpráva z Bitez",
+          }),
+        })
+
+        if (response.ok) {
+          alert("Message sent successfully.")
+          contactForm.reset()
+        } else {
+          alert("An error occurred. Please try again.")
+        }
+      } catch (error) {
+        alert("An error occurred. Please try again.")
+      }
+
+      contactFormSubmit.textContent = "Kontaktujte mě"
+      contactFormSubmit.disabled = false
+    })
+  }
 })
