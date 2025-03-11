@@ -1,4 +1,16 @@
+@import "fonts.css";
+
 body {
   font-family: "Inter", sans-serif;
   color: #262e49;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Champ", sans-serif;
+  text-transform: uppercase;
 }

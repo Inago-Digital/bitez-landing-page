@@ -16,10 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
           light: "#e1e9ee",
           gray: "#c7Ceda",
           "light-gray": "#D0D7EF",
-          muted: {
-            DEFAULT: "#d6e1e8",
-            dark: "#c6d6e1",
-          },
+          muted: "#ebF0f4",
           white: "#ffffff",
           black: "#000000",
           "blue-gray": "#8b9ab3",
@@ -29,7 +26,45 @@ document.addEventListener("DOMContentLoaded", function () {
           blue: "#117cf7",
           purple: "#b16bed",
         },
+        fontFamily: {
+          champ: ["Champ", "sans-serif"],
+        },
       },
     },
   }
+
+  const faqQuestions = document.querySelectorAll("[data-faq-question]")
+
+  faqQuestions.forEach((question) => {
+    question.addEventListener("click", () => {
+      const faqItem = question.parentElement
+      const answer = question.nextElementSibling
+      const icon = question.querySelector("[data-faq-icon]")
+
+      const isOpen = faqItem.classList.contains("active")
+
+      if (!isOpen) {
+        document.querySelectorAll("[data-faq-item]").forEach((item) => {
+          item.classList.remove("active")
+          const itemAnswer = item.querySelector("[data-faq-answer]")
+          const itemIcon = item.querySelector("[data-faq-icon]")
+
+          if (itemAnswer && itemIcon) {
+            itemAnswer.style.maxHeight = "0"
+            itemIcon.style.transform = "rotate(0deg)"
+          }
+        })
+      }
+
+      faqItem.classList.toggle("active")
+
+      if (faqItem.classList.contains("active")) {
+        answer.style.maxHeight = `${answer.scrollHeight}px`
+        icon.style.transform = "rotate(180deg)"
+      } else {
+        answer.style.maxHeight = "0"
+        icon.style.transform = "rotate(0deg)"
+      }
+    })
+  })
 })
