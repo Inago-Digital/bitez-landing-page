@@ -12,6 +12,7 @@ function generateEmailTemplate(data) {
       margin: 0;
       padding: 0;
       background-color: #e1e9ee;
+			height: 100vh;
     }
     .email-container {
       max-width: 600px;
@@ -26,6 +27,10 @@ function generateEmailTemplate(data) {
     }
     .email-content {
       padding: 30px 20px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
     }
     .email-footer {
       background-color: #262e49;

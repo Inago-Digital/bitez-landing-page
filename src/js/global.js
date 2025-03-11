@@ -154,8 +154,6 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Email template generator not loaded")
       }
 
-      console.log(htmlTemplate)
-
       try {
         const response = await fetch("https://email.hangerthem.com/send", {
           method: "POST",
