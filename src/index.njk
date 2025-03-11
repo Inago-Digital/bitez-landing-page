@@ -141,7 +141,7 @@ title: Bitez - Marketing pro restaurace
 
   <div class="mt-10 flex justify-center relative">
     <img
-      src="./assets/phones_banner.png"
+      src="./assets/images/phones_banner.png"
       alt="Phones"
       class="h-120 max-w-none relative"
     />
@@ -220,25 +220,7 @@ title: Bitez - Marketing pro restaurace
   </a>
 </section>
 
-<section class="px-5 flex flex-col items-center gap-10">
-  <h2 class="text-center text-[54px] leading-[64px] font-black uppercase">
-    Jak to funguje?
-  </h2>
-  <p class="text-center text-xl px-2">
-    Pro majitele gastro podniků jsme vytvořili speciální marketingovou službu,
-    díky které budete na
-    <strong>sociálních sítích nepřehlédnutelní</strong>.
-  </p>
-  <iframe
-    src="https://www.youtube.com/embed/xi2D5WX6AZo?si=izonyit6kyYuhBkz"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen
-    class="w-full h-auto aspect-video rounded-xl outline-none"
-  ></iframe>
-</section>
+{% include 'partials/how-does-it-work-component.njk' %}
 
 <section class="bg-accent px-5 py-18 flex flex-col items-center gap-10">
   <h2 class="text-center text-[54px] leading-[64px] font-black uppercase">
@@ -423,7 +405,7 @@ title: Bitez - Marketing pro restaurace
   </h2>
   <div class="grid grid-cols-1 gap-6">
     <div
-      class="p-8 bg-white rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.1)] flex flex-col gap-4"
+      class="p-8 bg-white rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] flex flex-col gap-4"
     >
       <div class="flex items-center">
         <img
@@ -432,7 +414,7 @@ title: Bitez - Marketing pro restaurace
           class="w-17 h-17"
         />
         <div>
-          <p class="text-xl font-bold leading-[26px] text-[22px]">Daniel</p>
+          <p class="font-bold leading-[26px] text-[22px]">Daniel</p>
           <p class="text-base text-blue-gray">Restaurace U Zlatého kohouta</p>
         </div>
       </div>
@@ -451,7 +433,7 @@ title: Bitez - Marketing pro restaurace
     </div>
 
     <div
-      class="p-8 bg-white rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.1)] flex flex-col gap-4"
+      class="p-8 bg-white rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] flex flex-col gap-4"
     >
       <div class="flex items-center">
         <img
@@ -460,7 +442,7 @@ title: Bitez - Marketing pro restaurace
           class="w-17 h-17"
         />
         <div>
-          <p class="text-xl font-bold leading-[26px] text-[22px]">Daniel</p>
+          <p class="font-bold leading-[26px] text-[22px]">Daniel</p>
           <p class="text-base text-blue-gray">Restaurace U Zlatého kohouta</p>
         </div>
       </div>
@@ -479,7 +461,7 @@ title: Bitez - Marketing pro restaurace
     </div>
 
     <div
-      class="p-8 bg-white rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.1)] flex flex-col gap-4"
+      class="p-8 bg-white rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] flex flex-col gap-4"
     >
       <div class="flex items-center">
         <img
@@ -488,7 +470,7 @@ title: Bitez - Marketing pro restaurace
           class="w-17 h-17"
         />
         <div>
-          <p class="text-xl font-bold leading-[26px] text-[22px]">Daniel</p>
+          <p class="font-bold leading-[26px] text-[22px]">Daniel</p>
           <p class="text-base text-blue-gray">Restaurace U Zlatého kohouta</p>
         </div>
       </div>
@@ -508,16 +490,4 @@ title: Bitez - Marketing pro restaurace
   </div>
 </section>
 
-<section class="bg-primary py-10 px-5 flex flex-col items-center gap-10">
-  <h1
-    class="text-center text-white leading-[64px] text-[54px] font-black uppercase"
-  >
-    Chci začít dělat marketing
-  </h1>
-  <a
-    class="bg-accent border border-accent font-extrabold w-full text-center py-6 rounded-full text-lg hover:bg-accent-dark hover:border-accent-dark transition-colors"
-    href="#"
-  >
-    Chci začít
-  </a>
-</section>
+{% include 'partials/i-want-to-start.njk' %}
