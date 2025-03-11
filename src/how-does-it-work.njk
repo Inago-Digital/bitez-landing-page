@@ -314,23 +314,9 @@ permalink: "how-does-it-work.html"
     </div>
   </div>
 
-  <a
-    href="#"
-    class="w-full font-champ text-white text-4xl uppercase bg-primary p-5 rounded-xl block text-center mt-10 hover:bg-secondary transition-colors"
-  >
-    Chci spustit marketing
-  </a>
+  {% include 'partials/i-want-marketing.njk' %}
 </section>
 
-<section class="px-5 py-18 bg-white -mb-18">
-  <h2 class="text-center text-[54px] leading-[64px] mb-8 text-primary">
-    Na co se nás ptáte?
-  </h2>
-
-  <div class="flex flex-col w-full gap-4">
-    {% for item in faq.invoice_and_contract.questions %} {% include
-    'partials/faq-item.njk' %} {% endfor %}
-  </div>
-</section>
+{% include 'partials/faq-component.njk' %}
 
 {% include 'partials/i-want-to-start.njk' %}

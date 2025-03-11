@@ -1,0 +1,121 @@
+<div
+  class="px-2 pb-10 pt-2 bg-white rounded-xl shadow-[0_0_10px_rgba(150,150,150,0.1)] flex flex-col gap-4"
+>
+  {% if plan.favorite %}
+  <div
+    class="text-center text-white bg-primary uppercase p-3 text-xl font-champ rounded-xl"
+  >
+    Nejoblíbenější
+  </div>
+  {% endif %}
+
+  <div class="px-4 flex flex-col gap-8 pt-8">
+    <div class="px-2">
+      <h3 class="text-primary text-[28px] leading-[34px] mb-4">
+        {{ plan.name }}
+      </h3>
+      <p class="mb-10">
+        {{ plan.description }}
+      </p>
+      <div>
+        <p class="text-[48px] leading-[54px] font-champ">
+          {{ plan.price }}
+        </p>
+        <p class="underline">/ týdně bez DPH</p>
+      </div>
+    </div>
+    <a
+      href="#"
+      class="relative bg-light-green h-19 border border-light-green text-white p-2 rounded-full flex items-center justify-center w-full gap-5 transition-colors group hover:bg-dark-green hover:border-dark-green"
+    >
+      <div
+        class="bg-white rounded-full w-15 h-15 flex items-center justify-center absolute left-2"
+      >
+        <i
+          data-lucide="chevron-right"
+          class="text-light-green w-9 h-9 group-hover:text-dark-green transition-colors"
+        ></i>
+      </div>
+      <p class="text-xl font-bold text-white">Mám zájem</p>
+    </a>
+    <div class="px-2 flex flex-col gap-6">
+      <h4 class="font-sans font-bold text-2xl normal-case">Balíček obsahuje</h4>
+      <ul class="flex flex-col gap-2">
+        <li class="flex items-center justify-between text-sm">
+          <div class="flex items-center gap-2">
+            <i
+              data-lucide="check"
+              class="w-5 h-5 p-1 bg-light-green rounded-full text-white stroke-5"
+            ></i>
+            Příspěvků za týden
+          </div>
+          <strong>{{ plan.feed }} feed, {{ plan.stories }} stories</strong>
+        </li>
+        <li class="flex items-center justify-between text-sm">
+          <div class="flex items-center gap-2">
+            <i
+              data-lucide="check"
+              class="w-5 h-5 p-1 bg-light-green rounded-full text-white stroke-5"
+            ></i>
+            Reel (video)
+          </div>
+          <strong>{{ plan.reel }} za měsíc</strong>
+        </li>
+        <li class="flex items-center justify-between text-sm">
+          <div class="flex items-center gap-2">
+            <i
+              data-lucide="check"
+              class="w-5 h-5 p-1 bg-light-green rounded-full text-white stroke-5"
+            ></i>
+            Focení a natáčení
+          </div>
+          <strong>{{ plan.photoshoot }} za měsíc</strong>
+        </li>
+        <li class="flex items-center justify-between text-sm">
+          <div class="flex items-center gap-2">
+            <i
+              data-lucide="check"
+              class="w-5 h-5 p-1 bg-light-green rounded-full text-white stroke-5"
+            ></i>
+            Sponzoring příspěvků
+          </div>
+        </li>
+        <li class="flex items-center justify-between text-sm">
+          <div class="flex items-center gap-2">
+            <i
+              data-lucide="check"
+              class="w-5 h-5 p-1 bg-light-green rounded-full text-white stroke-5"
+            ></i>
+            Grafika pro denní provoz
+          </div>
+          <strong>
+            {{ plan.graphics.daily }} {% if plan.graphics.daily is not string %}
+            za měsíc{% endif %}
+          </strong>
+        </li>
+        <li class="flex items-center justify-between text-sm">
+          <div class="flex items-center gap-2">
+            <i
+              data-lucide="check"
+              class="w-5 h-5 p-1 bg-light-green rounded-full text-white stroke-5"
+            ></i>
+            Grafika pro speciální akci
+          </div>
+          <strong>
+            {{ plan.graphics.special }} {% if plan.graphics.daily is not string
+            %} za měsíc{% endif %}
+          </strong>
+        </li>
+        <li class="flex items-center justify-between text-sm">
+          <div class="flex items-center gap-2">
+            <i
+              data-lucide="check"
+              class="w-5 h-5 p-1 bg-light-green rounded-full text-white stroke-5"
+            ></i>
+            Aplikace pro komunikaci
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,7 @@
 [
   {
     "name": "Hlavní jídlo",
+    "description": "Kvalitní obsah bez starostí pro běžný provoz vašeho podniku.",
     "price": "1 890 Kč",
     "feed": 2,
     "stories": 3,
@@ -14,6 +15,7 @@
   },
   {
     "name": "Degustační menu",
+    "description": "Doporučené množství obsahu pro získávání nových hostů.",
     "price": "2 390 Kč",
     "feed": 3,
     "stories": 4,
@@ -27,6 +29,7 @@
   },
   {
     "name": "Specialita",
+    "description": "Maximální vytěžení marketingových kanálů pro náročné podniky.",
     "price": "3 890 Kč",
     "feed": 4,
     "stories": 5,

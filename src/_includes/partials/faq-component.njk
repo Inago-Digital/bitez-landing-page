@@ -1,0 +1,10 @@
+<section class="px-5 py-18 bg-white -mb-18">
+  <h2 class="text-center text-[54px] leading-[64px] mb-8 text-primary">
+    Na co se nás ptáte?
+  </h2>
+
+  <div class="flex flex-col w-full gap-4">
+    {% for item in faq.invoice_and_contract.questions %} {% include
+    'partials/faq-item.njk' %} {% endfor %}
+  </div>
+</section>
