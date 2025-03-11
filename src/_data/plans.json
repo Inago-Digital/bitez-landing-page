@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Hlavní jídlo",
+    "price": "1 890 Kč",
+    "feed": 2,
+    "stories": 3,
+    "reel": 3,
+    "photoshoot": 1,
+    "graphics": {
+      "daily": 5,
+      "special": 1
+    },
+    "favorite": false
+  },
+  {
+    "name": "Degustační menu",
+    "price": "2 390 Kč",
+    "feed": 3,
+    "stories": 4,
+    "reel": 3,
+    "photoshoot": 1,
+    "graphics": {
+      "daily": 5,
+      "special": 1
+    },
+    "favorite": true
+  },
+  {
+    "name": "Specialita",
+    "price": "3 890 Kč",
+    "feed": 4,
+    "stories": 5,
+    "reel": 6,
+    "photoshoot": 1,
+    "graphics": {
+      "daily": "neomezeně",
+      "special": "neomezeně"
+    },
+    "favorite": false
+  }
+]

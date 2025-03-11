@@ -71,14 +71,14 @@ permalink: "how-does-it-work.html"
       <div class="flex justify-between -mx-1">
         <a href="#">
           <img
-            src="./assets/graphic/GetItOnGooglePlay_Badge_Web_color_English.png"
+            src="./assets/graphic/google-play-badge.png"
             alt="Get it on Google Play"
             class="h-12"
           />
         </a>
         <a href="#">
           <img
-            src="./assets/graphic/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.png"
+            src="./assets/graphic/app-store-badge.png"
             alt="Download on the App Store"
             class="h-12"
           />
@@ -328,9 +328,8 @@ permalink: "how-does-it-work.html"
   </h2>
 
   <div class="flex flex-col w-full gap-4">
-    {% for item in faq.invoice_and_contract.questions %}
-    {% include 'partials/faq-item.njk' %}
-    {% endfor %}
+    {% for item in faq.invoice_and_contract.questions %} {% include
+    'partials/faq-item.njk' %} {% endfor %}
   </div>
 </section>
 
