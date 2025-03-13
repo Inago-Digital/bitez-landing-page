@@ -132,7 +132,6 @@ document.addEventListener("DOMContentLoaded", function () {
 Name: ${data.name}
 Email: ${data.email}
 Phone: ${data.phone}
-Company: ${data.company}
 `,
             subject: "Nová zpráva z Bitez",
             html: htmlTemplate || undefined,
