@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -65,15 +65,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body
-    class="{% if not '/faq' in page.url %}bg-muted{% endif %} flex flex-col gap-18"
+    class="{% if not '/faq' in page.url %}bg-muted{% endif %} flex flex-col gap-[72px]"
   >
     {% include "partials/navigation.njk" %}
 
@@ -82,9 +81,10 @@
     {% include "partials/footer.njk" %}
 
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="./js/global.js"></script>
     <script src="./js/email-template.js"></script>
+    <script>
+      lucide.createIcons()
+    </script>
   </body>
 </html>

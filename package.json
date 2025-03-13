@@ -4,8 +4,11 @@
   "description": "Marketing pro restaurace - Bitez landing page",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "npx eleventy && npm run build:css",
+    "build:css": "npx postcss ./src/css/tailwind.css -o ./_site/css/styles.css --env production",
+    "dev": "npx eleventy --serve & npm run watch:css",
+    "watch:css": "npx postcss ./src/css/tailwind.css -o ./_site/css/styles.css --watch",
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,11 @@
   },
   "homepage": "https://github.com/Inago-Digital/bitez-landing-page#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0"
+    "@11ty/eleventy": "^2.0.0",
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^6.0.5",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.17"
   }
 }
