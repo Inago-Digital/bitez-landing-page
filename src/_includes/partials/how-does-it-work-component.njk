@@ -1,8 +1,10 @@
 <section class="px-5 flex flex-col items-center gap-10">
-  <h2 class="text-center text-[54px] leading-[64px]">
+  <h2 class="text-center text-[54px] leading-[64px] md:text-7xl">
     Jak to funguje?
   </h2>
-  <p class="text-center text-xl px-2">
+  <p
+    class="text-center text-xl px-2 md:leading-[26px] md:text-[22px] max-w-175"
+  >
     {% if not '/how-does-it-work' in page.url %} Pro majitele gastro podniků
     jsme vytvořili speciální marketingovou službu, díky které budete na
     <strong>sociálních sítích nepřehlédnutelní</strong>. {% else %} Bitez je
@@ -16,6 +18,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen
-    class="w-full h-auto aspect-video rounded-xl outline-none"
+    class="w-full h-auto aspect-video rounded-xl outline-none max-w-200"
   ></iframe>
 </section>

@@ -1,39 +1,58 @@
 <nav
   data-navigation
-  class="bg-white shadow-xl flex items-center justify-between p-4 px-6 rounded-full fixed top-2 left-2 z-100 w-[calc(100%-1rem)]"
+  class="bg-white shadow-xl flex items-center justify-between p-4 px-6 md:p-2 rounded-full fixed top-2 left-2 z-100 w-[calc(100%-1rem)]"
 >
-  <a href="/">
+  <a href="/" class="md:ml-8">
     <img
       src="./assets/logo/bitez_logo_cervena.svg"
       alt="Bitez"
       class="h-auto w-30"
     />
   </a>
-  <div class="hidden md:flex items-center gap-6">
-    <a
-      href="/#features"
-      class="text-tertiary hover:text-primary transition-colors"
-      >Features</a
+
+  <ul class="hidden md:flex items-center gap-8 text-xl font-champ">
+    <li>
+      <a
+        href="/"
+        class="text-tertiary uppercase hover:text-primary transition-colors"
+        >Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/how-does-it-work"
+        class="text-tertiary uppercase hover:text-primary transition-colors"
+        >Jak to funguje
+      </a>
+    </li>
+    <li>
+      <a
+        href="/pricing"
+        class="text-tertiary uppercase hover:text-primary transition-colors"
+        >Ceny
+      </a>
+    </li>
+    <li>
+      <a
+        href="/contact"
+        class="text-tertiary uppercase hover:text-primary transition-colors"
+        >Kontakt
+      </a>
+    </li>
+  </ul>
+
+  <a
+    href="#"
+    class="hidden md:flex bg-accent border border-accent text-white p-2 rounded-full items-center w-54 transition-colors hover:bg-accent-dark hover:border-accent-dark"
+  >
+    <div
+      class="bg-white rounded-full w-12 h-12 flex items-center justify-center"
     >
-    <a
-      href="/#pricing"
-      class="text-tertiary hover:text-primary transition-colors"
-      >Pricing</a
-    >
-    <a href="/#faq" class="text-tertiary hover:text-primary transition-colors"
-      >FAQ</a
-    >
-    <a
-      href="/contact"
-      class="text-tertiary hover:text-primary transition-colors"
-      >Contact</a
-    >
-    <a
-      href="/login"
-      class="bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary transition-colors"
-      >Login</a
-    >
-  </div>
+      <i data-lucide="chevron-right" class="text-tertiary w-9 h-9"></i>
+    </div>
+    <p class="text-lg font-bold text-tertiary mx-auto">Chci začít</p>
+  </a>
+
   <div
     data-mobile-menu-toggle
     class="flex flex-col gap-1.5 cursor-pointer md:hidden"
@@ -48,44 +67,56 @@
   data-mobile-menu
   class="fixed inset-0 bg-muted hidden flex-col items-center gap-6 p-5 z-50"
 >
-  <div class="flex flex-col items-center gap-3 text-xl w-full font-champ pt-24">
-    <a
-      href="/"
-      class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
-      >Home
-      <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
-    </a>
-    <a
-      href="/how-does-it-work"
-      class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
-      >Jak to funguje
-      <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
-    </a>
-    <a
-      href="/pricing"
-      class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
-      >Ceny
-      <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
-    </a>
-    <a
-      href="/contact"
-      class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
-      >Kontakt
-      <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
-    </a>
-    <a
-      href="/faq"
-      class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
-      >Časté dotazy
-      <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
-    </a>
-    <a
-      href="#"
-      class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
-      >⭐ Inventura Instagramu
-      <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
-    </a>
-  </div>
+  <ul class="flex flex-col items-center gap-3 text-xl w-full font-champ pt-24">
+    <li class="w-full">
+      <a
+        href="/"
+        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+        >Home
+        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+      </a>
+    </li>
+    <li class="w-full">
+      <a
+        href="/how-does-it-work"
+        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+        >Jak to funguje
+        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+      </a>
+    </li>
+    <li class="w-full">
+      <a
+        href="/pricing"
+        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+        >Ceny
+        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+      </a>
+    </li>
+    <li class="w-full">
+      <a
+        href="/contact"
+        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+        >Kontakt
+        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+      </a>
+    </li>
+    <li class="w-full">
+      <a
+        href="/faq"
+        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+        >Časté dotazy
+        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+      </a>
+    </li>
+    <li class="w-full">
+      <a
+        href="#"
+        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+        >⭐ Inventura Instagramu
+        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+      </a>
+    </li>
+  </ul>
 
   <p class="text-2xl text-primary font-champ underline mt-4">
     Stáhněte si aplikaci
