@@ -90,9 +90,6 @@ function generateEmailTemplate(data) {
         <div class="detail-item">
           <span class="detail-label">Telefon:</span> ${data.phone}
         </div>
-        <div class="detail-item">
-          <span class="detail-label">Společnost:</span> ${data.company}
-        </div>
       </div>
       
       <p>Pro rychlou odpověď můžete kontaktovat přímo na uvedený email nebo telefon.</p>
