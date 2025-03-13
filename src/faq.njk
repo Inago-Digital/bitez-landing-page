@@ -4,8 +4,8 @@ title: Bitez - Ceny
 permalink: "faq.html"
 ---
 
-<header class="mt-30 px-5">
-  <h2 class="text-center text-[54px] leading-[64px]">
+<header class="mt-30 px-5 flex flex-col items-center md:p-12">
+  <h2 class="text-center text-[44px] leading-[52px] mb-8 md:mb-10 md:text-7xl">
     Časté
     <br class="md:hidden" />
     dotazy
@@ -13,8 +13,10 @@ permalink: "faq.html"
 </header>
 
 {% for key, section in faq %}
-<section class="px-5">
-  <h3 class="text-primary text-[28px] leading-[34px] mb-4">
+<section class="px-5 mx-auto">
+  <h3
+    class="text-primary text-[28px] leading-[34px] mb-4 md:mb-10 md:text-[40px] md:leading-[46px]"
+  >
     {{ section.title }}
   </h3>
   <div class="flex flex-col w-full gap-4">
@@ -24,15 +26,17 @@ permalink: "faq.html"
 </section>
 {% endfor %}
 
-<section class="px-5">
-  <div class="bg-primary px-6 py-10 rounded-xl">
-    <h3 class="text-white text-center text-[40px] leading-[46px] mb-4">
+<section class="px-5 flex flex-col items-center">
+  <div class="bg-primary px-6 py-10 rounded-xl max-w-250 w-full md:py-16">
+    <h3 class="text-white text-center text-[40px] leading-[46px] mb-4 md:mb-6">
       Nenašli jste odpověď?
     </h3>
-    <p class="text-white text-center text-xl mb-6">
+    <p
+      class="text-white text-center text-xl mb-6 md:leading-[26px] md:text-[22px] md:mb-10"
+    >
       Napište nám nebo zavolejte a rádi vám odpovíme.
     </p>
-    <ul class="flex flex-col gap-4">
+    <ul class="flex flex-col gap-4 md:flex-row md:gap-20 md:justify-center">
       <li class="flex items-center gap-4">
         <i data-lucide="phone" class="w-10 h-10 text-accent"></i>
         <a
