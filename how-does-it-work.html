@@ -77,7 +77,7 @@
   >
     <nav
   data-navigation
-  class="bg-white shadow-xl flex items-center justify-between p-4 px-6 md:p-2 rounded-full fixed top-2 left-2 z-100 w-[calc(100%-1rem)]"
+  class="bg-white shadow-xl flex items-center justify-between p-4 px-6 md:p-2 rounded-full fixed top-2 md:top-5 left-2 md:left-5 z-100 w-[calc(100%-1rem)] md:w-[calc(100%-2.5rem)]"
 >
   <a href="/" class="md:ml-8">
     <img
@@ -220,63 +220,77 @@
 
 
     
-<header class="mt-30 px-5">
-  <h3 class="text-center text-primary text-[28px] leading-[34px] mb-4">
+<header class="mt-30 px-5 flex flex-col items-center md:p-12">
+  <h3
+    class="text-center text-primary text-[28px] leading-[34px] mb-4 md:mb-10 md:text-[40px] md:leading-[46px]"
+  >
     Fungující Instagram
     <br class="md:hidden" />
     a Facebook
   </h3>
-  <h2 class="text-center text-[44px] leading-[52px] mb-8">
+  <h2 class="text-center text-[44px] leading-[52px] mb-8 md:mb-10 md:text-7xl">
     Postaráme se
     <br class="md:hidden" />
     o sociální
     <br class="md:hidden" />
-    sítě vaší
+    sítě
+    <br class="hidden md:block" />
+    vaší
     <br class="md:hidden" />
     restaurace
   </h2>
-  <p class="text-center text-xl mb-10">
+  <p
+    class="text-center text-xl mb-10 md:leading-[26px] md:text-[22px] max-w-200"
+  >
     Spravujeme sociální sítě vašeho podniku prostřednictvím snadné aplikace,
     abyste se mohli naplno věnovat tomu, co je pro vás nejdůležitější.
   </p>
 
-  <div class="grid grid-cols-1 gap-6">
+  <div class="flex flex-col gap-6 md:flex-row items-center">
     <div
-      class="p-8 bg-white rounded-xl shadow-[0_0_10px_rgba(150,150,150,0.1)] flex flex-col gap-4"
+      class="p-8 bg-white rounded-xl shadow-[0_0_10px_rgba(150,150,150,0.1)] flex flex-col gap-4 h-fit"
     >
       <div class="flex items-center">
         <h4 class="text-3xl">
-          Správce vašich sítí <span class="text-primary">Bára</span>
+          Správce
+          <br />
+          vašich sítí
+          <br />
+          <span class="text-primary">Bára</span>
         </h4>
         <img
           src="https://api.dicebear.com/9.x/lorelei/svg?size=68&seed=Bára"
           alt="Quote"
-          class="w-17 h-17"
+          class="ml-auto w-17 h-17"
         />
       </div>
       <div class="flex items-center">
         <p class="w-7/8">
           Na jedné straně je naše
-          <br class="md:hidden" />
+          <br />
           <strong>specialistka na sociální sítě</strong>,
-          <br class="md:hidden" />
+          <br />
           která má na starost vaše profily.
         </p>
         <i
           data-lucide="chevrons-down"
-          class="w-18 h-18 text-accent w-1/8 mx-auto"
+          class="w-18 h-18 text-accent w-1/8 mx-auto md:hidden"
+        ></i>
+        <i
+          data-lucide="chevrons-right"
+          class="w-18 h-18 text-accent w-1/8 mx-auto hidden md:inline"
         ></i>
       </div>
     </div>
 
     <div
-      class="px-8 py-10 bg-primary rounded-xl shadow-[0_0_10px_rgba(150,150,150,0.1)] flex flex-col gap-4"
+      class="px-8 py-10 bg-primary rounded-xl shadow-[0_0_10px_rgba(150,150,150,0.1)] flex flex-col gap-4 md:max-w-100"
     >
-      <h4 class="text-3xl text-white">
+      <h4 class="text-3xl text-white md:text-center">
         Jednoduchá
-        <br class="md:hidden" />
+        <br />
         aplikace
-        <br class="md:hidden" />
+        <br />
         Bitez
       </h4>
       <p class="text-white">
@@ -303,29 +317,37 @@
     </div>
 
     <div
-      class="p-8 bg-white rounded-xl shadow-[0_0_10px_rgba(150,150,150,0.1)] flex flex-col gap-4"
+      class="p-8 bg-white rounded-xl shadow-[0_0_10px_rgba(150,150,150,0.1)] flex flex-col gap-4 h-fit"
     >
-      <div class="flex items-center">
-        <h4 class="text-3xl">
-          Vy jako majitel <span class="text-primary">podniku</span>
+      <div class="flex items-center md:flex-row-reverse">
+        <h4 class="text-3xl md:text-right">
+          Vy jako
+          <br />
+          majitel
+          <br />
+          <span class="text-primary">podniku</span>
         </h4>
         <img
           src="https://api.dicebear.com/9.x/lorelei/svg?size=68&seed=Jan"
           alt="Quote"
-          class="w-17 h-17"
+          class="ml-auto md:mr-auto md:ml-0 w-17 h-17"
         />
       </div>
-      <div class="flex items-center">
+      <div class="flex items-center md:flex-row-reverse md:text-right">
         <p class="w-7/8">
           Na druhé straně jste vy jako
-          <br class="md:hidden" />
+          <br />
           majitel podniku, který na vše
-          <br class="md:hidden" />
+          <br />
           dohlíží a vidí výsledky.
         </p>
         <i
           data-lucide="chevrons-up"
-          class="w-18 h-18 text-accent w-1/8 mx-auto"
+          class="w-18 h-18 text-accent w-1/8 mx-auto md:hidden"
+        ></i>
+        <i
+          data-lucide="chevrons-left"
+          class="w-18 h-18 text-accent w-1/8 mx-auto hidden md:inline"
         ></i>
       </div>
     </div>
@@ -356,18 +378,53 @@
 
 
 <section
-  class="px-5 bg-accent py-18 overflow-hidden flex flex-col items-center"
+  class="px-5 bg-accent py-18 overflow-hidden flex flex-col items-center md:flex-row md:px-40 md:py-30 md:items-start"
 >
-  <h2 class="text-center text-[54px] leading-[64px] mb-8">Publikační plány</h2>
-  <p class="text-center text-xl mb-12">
-    Každý týden v aplikaci <strong>najdete nové příspěvky</strong> na
-    následujících sedm dní. Stačí je schválit k publikaci nebo přidat své
-    připomínky.
-  </p>
-  <img src="./assets/images/phone_01.png" alt="Phone" class="h-150 mb-10" />
+  <div class="w-full md:w-1/2">
+    <h2
+      class="text-center text-[54px] leading-[64px] mb-8 md:text-left md:text-7xl"
+    >
+      Publikační
+      <br class="hidden md:block" />
+      plány
+    </h2>
+    <p
+      class="text-center md:text-left text-xl mb-12 md:leading-[26px] md:text-[22px] max-w-120 md:mb-20"
+    >
+      Každý týden v aplikaci <strong>najdete nové příspěvky</strong> na
+      následujících sedm dní. Stačí je schválit k publikaci nebo přidat své
+      připomínky.
+    </p>
+    <a
+      href="#"
+      class="md:w-80 hidden md:flex relative bg-tertiary h-19 border border-tertiary text-white p-2 rounded-full items-center justify-center w-11/12 gap-5 transition-colors group hover:bg-dark hover:border-dark"
+    >
+      <div
+        class="bg-white rounded-full w-15 h-15 flex items-center justify-center absolute left-2"
+      >
+        <i
+          data-lucide="chevron-right"
+          class="text-tertiary w-9 h-9 group-hover:text-dark transition-colors"
+        ></i>
+      </div>
+      <p class="text-xl font-bold text-white">Chci začít</p>
+    </a>
+  </div>
+  <img
+    src="./assets/images/phone_01.png"
+    alt="Phone"
+    class="h-150 mb-10 md:hidden"
+  />
+  <div class="hidden md:block md:w-1/2">
+    <img
+      src="./assets/images/phone_02.png"
+      alt="Phone"
+      class="h-128 -my-18 mx-auto"
+    />
+  </div>
   <a
     href="#"
-    class="relative bg-tertiary h-19 border border-tertiary text-white p-2 rounded-full flex items-center justify-center w-11/12 gap-5 transition-colors group hover:bg-dark hover:border-dark"
+    class="md:hidden relative bg-tertiary h-19 border border-tertiary text-white p-2 rounded-full flex items-center justify-center w-11/12 gap-5 transition-colors group hover:bg-dark hover:border-dark"
   >
     <div
       class="bg-white rounded-full w-15 h-15 flex items-center justify-center absolute left-2"
@@ -382,20 +439,53 @@
 </section>
 
 <section
-  class="px-5 bg-primary py-18 overflow-hidden flex flex-col items-center -mt-18"
+  class="px-5 bg-primary py-18 overflow-hidden flex flex-col items-center -mt-18 md:flex-row md:px-40 md:py-30 md:items-start"
 >
-  <h2 class="text-center text-white text-[54px] leading-[64px] mb-8">
-    Chat pro komunikaci
-  </h2>
-  <p class="text-center text-white text-xl mb-12">
-    Konec e-mailům a nespočtu zpráv v chatovacích aplikacích. S marketingovou
-    specialistkou <strong>komunikujete</strong> přímo
-    <strong>v aplikaci</strong> a zadáváte tak úkoly snadno a rychle.
-  </p>
-  <img src="./assets/images/phone_01.png" alt="Phone" class="h-150 mb-10" />
+  <div class="w-full md:w-1/2">
+    <h2
+      class="text-center text-white text-[54px] leading-[64px] mb-8 md:text-left md:text-7xl"
+    >
+      Chat pro
+      <br class="hidden md:block" />
+      komunikaci
+    </h2>
+    <p
+      class="text-center text-white md:text-left text-xl mb-12 md:leading-[26px] md:text-[22px] max-w-120 md:mb-20"
+    >
+      Konec e-mailům a nespočtu zpráv v chatovacích aplikacích. S marketingovou
+      specialistkou <strong>komunikujete</strong> přímo
+      <strong>v aplikaci</strong> a zadáváte tak úkoly snadno a rychle.
+    </p>
+    <a
+      href="#"
+      class="md:w-80 hidden md:flex relative bg-tertiary h-19 border border-tertiary text-white p-2 rounded-full items-center justify-center w-11/12 gap-5 transition-colors group hover:bg-dark hover:border-dark"
+    >
+      <div
+        class="bg-white rounded-full w-15 h-15 flex items-center justify-center absolute left-2"
+      >
+        <i
+          data-lucide="chevron-right"
+          class="text-tertiary w-9 h-9 group-hover:text-dark transition-colors"
+        ></i>
+      </div>
+      <p class="text-xl font-bold text-white">Chci začít</p>
+    </a>
+  </div>
+  <img
+    src="./assets/images/phone_01.png"
+    alt="Phone"
+    class="h-150 mb-10 md:hidden"
+  />
+  <div class="hidden md:block md:w-1/2">
+    <img
+      src="./assets/images/phone_02.png"
+      alt="Phone"
+      class="h-128 -my-18 mx-auto"
+    />
+  </div>
   <a
     href="#"
-    class="relative bg-tertiary h-19 border border-tertiary text-white p-2 rounded-full flex items-center justify-center w-11/12 gap-5 transition-colors group hover:bg-dark hover:border-dark"
+    class="md:hidden relative bg-tertiary h-19 border border-tertiary text-white p-2 rounded-full flex items-center justify-center w-11/12 gap-5 transition-colors group hover:bg-dark hover:border-dark"
   >
     <div
       class="bg-white rounded-full w-15 h-15 flex items-center justify-center absolute left-2"
@@ -410,20 +500,53 @@
 </section>
 
 <section
-  class="px-5 bg-accent py-18 overflow-hidden flex flex-col items-center -mt-18"
+  class="px-5 bg-accent py-18 -mt-18 overflow-hidden flex flex-col items-center md:flex-row md:px-40 md:py-30 md:items-start"
 >
-  <h2 class="text-center text-[54px] leading-[64px] mb-8">
-    Kontrola a schvalování
-  </h2>
-  <p class="text-center text-xl mb-12">
-    Všechny naplánované příspěvky můžete
-    <strong>schválit jedním kliknutím</strong>, nebo poslat marketingové
-    specialistce zpětnou vazbu k úpravám.
-  </p>
-  <img src="./assets/images/phone_01.png" alt="Phone" class="h-150 mb-10" />
+  <div class="w-full md:w-1/2">
+    <h2
+      class="text-center text-[54px] leading-[64px] mb-8 md:text-left md:text-7xl"
+    >
+      Kontrola
+      <br class="hidden md:block" />
+      a schvalování
+    </h2>
+    <p
+      class="text-center md:text-left text-xl mb-12 md:leading-[26px] md:text-[22px] max-w-120 md:mb-20"
+    >
+      Všechny naplánované příspěvky můžete
+      <strong>schválit jedním kliknutím</strong>, nebo poslat marketingové
+      specialistce zpětnou vazbu k úpravám.
+    </p>
+    <a
+      href="#"
+      class="md:w-80 hidden md:flex relative bg-tertiary h-19 border border-tertiary text-white p-2 rounded-full items-center justify-center w-11/12 gap-5 transition-colors group hover:bg-dark hover:border-dark"
+    >
+      <div
+        class="bg-white rounded-full w-15 h-15 flex items-center justify-center absolute left-2"
+      >
+        <i
+          data-lucide="chevron-right"
+          class="text-tertiary w-9 h-9 group-hover:text-dark transition-colors"
+        ></i>
+      </div>
+      <p class="text-xl font-bold text-white">Chci začít</p>
+    </a>
+  </div>
+  <img
+    src="./assets/images/phone_01.png"
+    alt="Phone"
+    class="h-150 mb-10 md:hidden"
+  />
+  <div class="hidden md:block md:w-1/2">
+    <img
+      src="./assets/images/phone_02.png"
+      alt="Phone"
+      class="h-128 -my-18 mx-auto"
+    />
+  </div>
   <a
     href="#"
-    class="relative bg-tertiary h-19 border border-tertiary text-white p-2 rounded-full flex items-center justify-center w-11/12 gap-5 transition-colors group hover:bg-dark hover:border-dark"
+    class="md:hidden relative bg-tertiary h-19 border border-tertiary text-white p-2 rounded-full flex items-center justify-center w-11/12 gap-5 transition-colors group hover:bg-dark hover:border-dark"
   >
     <div
       class="bg-white rounded-full w-15 h-15 flex items-center justify-center absolute left-2"
@@ -438,19 +561,52 @@
 </section>
 
 <section
-  class="px-5 bg-primary py-18 overflow-hidden flex flex-col items-center -mt-18"
+  class="px-5 bg-primary py-18 overflow-hidden flex flex-col items-center -mt-18 md:flex-row md:px-40 md:py-30 md:items-start"
 >
-  <h2 class="text-center text-white text-[54px] leading-[64px] mb-8">
-    Fotky a videa pohromadě
-  </h2>
-  <p class="text-center text-white text-xl mb-12">
-    Aplikace slouží jako úložiště fotek a videí, které pro vás pořídíme.
-    <strong>Vždy je máte po ruce</strong>, takže je nemusíte nikde hledat.
-  </p>
-  <img src="./assets/images/phone_01.png" alt="Phone" class="h-150 mb-10" />
+  <div class="w-full md:w-1/2">
+    <h2
+      class="text-center text-white text-[54px] leading-[64px] mb-8 md:text-left md:text-7xl"
+    >
+      Fotky a videa
+      <br class="hidden md:block" />
+      pohromadě
+    </h2>
+    <p
+      class="text-center text-white md:text-left text-xl mb-12 md:leading-[26px] md:text-[22px] max-w-120 md:mb-20"
+    >
+      Aplikace slouží jako úložiště fotek a videí, které pro vás pořídíme.
+      <strong>Vždy je máte po ruce</strong>, takže je nemusíte nikde hledat.
+    </p>
+    <a
+      href="#"
+      class="md:w-80 hidden md:flex relative bg-tertiary h-19 border border-tertiary text-white p-2 rounded-full items-center justify-center w-11/12 gap-5 transition-colors group hover:bg-dark hover:border-dark"
+    >
+      <div
+        class="bg-white rounded-full w-15 h-15 flex items-center justify-center absolute left-2"
+      >
+        <i
+          data-lucide="chevron-right"
+          class="text-tertiary w-9 h-9 group-hover:text-dark transition-colors"
+        ></i>
+      </div>
+      <p class="text-xl font-bold text-white">Chci začít</p>
+    </a>
+  </div>
+  <img
+    src="./assets/images/phone_01.png"
+    alt="Phone"
+    class="h-150 mb-10 md:hidden"
+  />
+  <div class="hidden md:block md:w-1/2">
+    <img
+      src="./assets/images/phone_02.png"
+      alt="Phone"
+      class="h-128 -my-18 mx-auto"
+    />
+  </div>
   <a
     href="#"
-    class="relative bg-tertiary h-19 border border-tertiary text-white p-2 rounded-full flex items-center justify-center w-11/12 gap-5 transition-colors group hover:bg-dark hover:border-dark"
+    class="md:hidden relative bg-tertiary h-19 border border-tertiary text-white p-2 rounded-full flex items-center justify-center w-11/12 gap-5 transition-colors group hover:bg-dark hover:border-dark"
   >
     <div
       class="bg-white rounded-full w-15 h-15 flex items-center justify-center absolute left-2"
@@ -464,20 +620,26 @@
   </a>
 </section>
 
-<section class="px-5">
-  <h3 class="text-center text-primary text-[28px] leading-[34px] mb-4">
+<section class="px-5 flex flex-col items-center md:px-36">
+  <h3
+    class="text-center text-primary text-[28px] leading-[34px] mb-4 md:mb-10 md:text-[40px] md:leading-[46px]"
+  >
     Rychlí start marketingu
   </h3>
-  <h2 class="text-center text-[44px] leading-[52px] mb-8">
-    Kdy můžete začít aplikaci používat?
+  <h2 class="text-center text-[44px] leading-[52px] mb-8 md:mb-12 md:text-7xl">
+    Kdy můžete začít
+    <br class="hidden md:block" />
+    aplikaci používat?
   </h2>
-  <p class="text-center text-xl mb-10">
+  <p
+    class="text-center text-xl mb-10 md:leading-[26px] md:text-[22px] max-w-200"
+  >
     Víme, že <strong>čas je v gastru klíčový</strong>. Stačí nám dát vědět a my
     vám ukážeme, jak efektivně řídit
     <strong>marketing bez zbytečných zdržení</strong>.
   </p>
 
-  <div class="grid grid-cols-1 gap-6">
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
     <div
       class="p-8 bg-white rounded-xl shadow-[0_0_10px_rgba(150,150,150,0.1)] flex flex-col gap-4"
     >
@@ -553,7 +715,7 @@
 
   <a
   href="#"
-  class="w-full font-champ text-white text-4xl uppercase bg-primary p-5 rounded-xl block text-center mt-10 hover:bg-secondary transition-colors"
+  class="w-full font-champ text-white text-4xl uppercase bg-primary p-5 rounded-xl block text-center mt-10 hover:bg-secondary transition-colors md:p-7"
 >
   Chci spustit marketing
 </a>
@@ -561,133 +723,135 @@
 </section>
 
 <section class="px-5 py-18 bg-white -mb-18">
-  <h2 class="text-center text-[54px] leading-[64px] mb-8 text-primary">
+  <h2
+    class="text-center text-[54px] leading-[64px] mb-8 md:mb-12 text-primary md:text-7xl"
+  >
     Na co se nás ptáte?
   </h2>
 
-  <div class="flex flex-col w-full gap-4">
-     <div data-faq-item class="bg-muted rounded-xl overflow-hidden">
+  <div class="flex flex-col w-full gap-4 items-center">
+     <div data-faq-item class="bg-muted rounded-xl overflow-hidden max-w-250">
   <button
     data-faq-question
-    class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase"
+    class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase md:text-[28px] md:leading-[34px]"
   >
-    <span class="w-7/8">Jak nejrychleji můžeme začít?</span>
+    <span class="w-7/8 md:text-left">Jak nejrychleji můžeme začít?</span>
     <i
       data-faq-icon
       data-lucide="chevron-down"
-      class="w-6 h-6 transition-transform text-primary stroke-3 w-1/8"
+      class="w-6 md:w-10 h-6 md:h-10 transition-transform text-primary stroke-3 w-1/8"
     ></i>
   </button>
   <div
     data-faq-answer
     class="px-6 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
   >
-    <p class="pb-6 text-base">
+    <p class="pb-6 text-base md:text-lg">
        V momentě kdy si plácnete s naším obchdoném zástupcem, dáme věci do pohybu. Proces odbavení trvá v běžných případech jeden týden, ve kterém nastavujeme sociální sítě, připravujeme grafiku a připravíme u vás fotky a videa. První příspěvky začneme publikovat na začátku druhého týdne spolupráce. Pokud však potřebujete komunikovat dříve, dokážeme připravit grafické stories a posty již třetí den.
     </p>
   </div>
 </div>
-  <div data-faq-item class="bg-muted rounded-xl overflow-hidden">
+  <div data-faq-item class="bg-muted rounded-xl overflow-hidden max-w-250">
   <button
     data-faq-question
-    class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase"
+    class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase md:text-[28px] md:leading-[34px]"
   >
-    <span class="w-7/8">Jak začíná spolupráce?</span>
+    <span class="w-7/8 md:text-left">Jak začíná spolupráce?</span>
     <i
       data-faq-icon
       data-lucide="chevron-down"
-      class="w-6 h-6 transition-transform text-primary stroke-3 w-1/8"
+      class="w-6 md:w-10 h-6 md:h-10 transition-transform text-primary stroke-3 w-1/8"
     ></i>
   </button>
   <div
     data-faq-answer
     class="px-6 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
   >
-    <p class="pb-6 text-base">
+    <p class="pb-6 text-base md:text-lg">
       Začátek spolupráce je velmi jednoduchý. Jako první se s naším obchodním zástupcem dohodnetene na vybraném balíčku. Poté od nás dostanete přístupy do aplikace, kde se vás ujme naše marketingová specialistka. S ní se od prvního dne pustíte do základního nastavení vašich sociálních sítí, vyžádá si od vás loga a další grafiku podle kterých připraví grafickou identitu a domluví s vámi termín focení. Do 48 hodin po návštěvě fotografa vám poté zašle první sadu příspěvků k publikaci.
     </p>
   </div>
 </div>
-  <div data-faq-item class="bg-muted rounded-xl overflow-hidden">
+  <div data-faq-item class="bg-muted rounded-xl overflow-hidden max-w-250">
   <button
     data-faq-question
-    class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase"
+    class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase md:text-[28px] md:leading-[34px]"
   >
-    <span class="w-7/8">Jak probíhá focení?</span>
+    <span class="w-7/8 md:text-left">Jak probíhá focení?</span>
     <i
       data-faq-icon
       data-lucide="chevron-down"
-      class="w-6 h-6 transition-transform text-primary stroke-3 w-1/8"
+      class="w-6 md:w-10 h-6 md:h-10 transition-transform text-primary stroke-3 w-1/8"
     ></i>
   </button>
   <div
     data-faq-answer
     class="px-6 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
   >
-    <p class="pb-6 text-base">
+    <p class="pb-6 text-base md:text-lg">
       Podle frekvence, která je uvedena ve vašem plánu, za vámi po předchozí dohodě dorazí do vaší provozovny fotograf. Během hodiny až dvou u vás nafotí a natočí potřebné materiály, které budou sloužit k publikaci. Počet fotek není omezen a budou vám dány k dispozici i pro další účely. Od vás budeme potřebovat perfektně připravené vše, co se bude fotit a nedocházelo tak ke zbytečným časovým prodlevám.
     </p>
   </div>
 </div>
-  <div data-faq-item class="bg-muted rounded-xl overflow-hidden">
+  <div data-faq-item class="bg-muted rounded-xl overflow-hidden max-w-250">
   <button
     data-faq-question
-    class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase"
+    class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase md:text-[28px] md:leading-[34px]"
   >
-    <span class="w-7/8">Jak proběhne předání přístupů na sociální sítě?</span>
+    <span class="w-7/8 md:text-left">Jak proběhne předání přístupů na sociální sítě?</span>
     <i
       data-faq-icon
       data-lucide="chevron-down"
-      class="w-6 h-6 transition-transform text-primary stroke-3 w-1/8"
+      class="w-6 md:w-10 h-6 md:h-10 transition-transform text-primary stroke-3 w-1/8"
     ></i>
   </button>
   <div
     data-faq-answer
     class="px-6 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
   >
-    <p class="pb-6 text-base">
+    <p class="pb-6 text-base md:text-lg">
       Po zahájení spolupráce dostanete přidělenou svou vlastní projektovou asistentku. Společně s ní si poté pomocí projektové aplikace předáte veškeré přístupy, podklady a další materiály. V aplikace na vás bude čekat jednoduchý onboarding s akčními kroky, které je potřeba splnit a díky kterým nám předáte přístupy. Důležité je, abyste věděli, kdo vaše stránky založil nebo je případně spravuje, měli potřebná hesla a registrační e-maily. Pokud je nemáte nebo se do účtů nemůžete dostat, vaše asistentka s vámi naplánuje další individuální postup.
     </p>
   </div>
 </div>
-  <div data-faq-item class="bg-muted rounded-xl overflow-hidden">
+  <div data-faq-item class="bg-muted rounded-xl overflow-hidden max-w-250">
   <button
     data-faq-question
-    class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase"
+    class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase md:text-[28px] md:leading-[34px]"
   >
-    <span class="w-7/8">Jak budeme komunikovat?</span>
+    <span class="w-7/8 md:text-left">Jak budeme komunikovat?</span>
     <i
       data-faq-icon
       data-lucide="chevron-down"
-      class="w-6 h-6 transition-transform text-primary stroke-3 w-1/8"
+      class="w-6 md:w-10 h-6 md:h-10 transition-transform text-primary stroke-3 w-1/8"
     ></i>
   </button>
   <div
     data-faq-answer
     class="px-6 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
   >
-    <p class="pb-6 text-base">
+    <p class="pb-6 text-base md:text-lg">
       Komunikovat budeme pomocí přehledné aplikace, kterou si můžete stáhnout do počítače, telefonu nebo ipadu. Všechny úkoly nám budete zadávat skrze ni. Umožní vám také komunikovat s vaší asistentkou, schvalovat výstupy nebo nahrávat data. Na začátku vám pošleme jednoduchý manuál k obsluze a nastavíme přístupy i pro více uživatelů.
     </p>
   </div>
 </div>
-  <div data-faq-item class="bg-muted rounded-xl overflow-hidden">
+  <div data-faq-item class="bg-muted rounded-xl overflow-hidden max-w-250">
   <button
     data-faq-question
-    class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase"
+    class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase md:text-[28px] md:leading-[34px]"
   >
-    <span class="w-7/8">Uvidíme vaše osobní zprávy na sociálních sítích?</span>
+    <span class="w-7/8 md:text-left">Uvidíme vaše osobní zprávy na sociálních sítích?</span>
     <i
       data-faq-icon
       data-lucide="chevron-down"
-      class="w-6 h-6 transition-transform text-primary stroke-3 w-1/8"
+      class="w-6 md:w-10 h-6 md:h-10 transition-transform text-primary stroke-3 w-1/8"
     ></i>
   </button>
   <div
     data-faq-answer
     class="px-6 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
   >
-    <p class="pb-6 text-base">
+    <p class="pb-6 text-base md:text-lg">
       Neuvidíme. Máme přístup pouze do profilů vaší restaurace. Do vašeho osobního profilu nám přístup nedáváte a my se do něj nemůžeme nijak dostat. Vaše soukromé zprávy tak jsou v maximálním bezpečí.
     </p>
   </div>
@@ -695,9 +859,7 @@
  
   </div>
 </section>
-
-
-<section
+ <section
   class="bg-primary py-10 px-5 flex flex-col items-center gap-10 md:flex-row md:justify-center md:gap-20"
 >
   <h1 class="text-center text-white leading-[64px] text-[54px] md:text-7xl">
@@ -850,8 +1012,8 @@
 
 
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="./js/global.js"></script>
     <script src="./js/email-template.js"></script>
   </body>
