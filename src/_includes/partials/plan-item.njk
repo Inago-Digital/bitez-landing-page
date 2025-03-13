@@ -1,5 +1,5 @@
 <div
-  class="px-2 pb-10 pt-2 bg-white rounded-xl shadow-[0_0_10px_rgba(150,150,150,0.1)] flex flex-col gap-4"
+  class="px-2 pb-10 pt-2 bg-white rounded-xl shadow-[0_0_10px_rgba(150,150,150,0.1)] flex flex-col gap-4 h-fit"
 >
   {% if plan.favorite %}
   <div
@@ -17,11 +17,11 @@
       <p class="mb-10">
         {{ plan.description }}
       </p>
-      <div>
+      <div class="md:flex items-end gap-4">
         <p class="text-[48px] leading-[54px] font-champ">
           {{ plan.price }}
         </p>
-        <p class="underline">/ týdně bez DPH</p>
+        <p class="underline md:pb-2">/ týdně bez DPH</p>
       </div>
     </div>
     <a
@@ -36,7 +36,10 @@
           class="text-light-green w-9 h-9 group-hover:text-dark-green transition-colors"
         ></i>
       </div>
-      <p class="text-xl font-bold text-white">Mám zájem</p>
+      <p class="text-xl font-bold text-white md:hidden">Mám zájem</p>
+      <p class="text-xl font-bold text-white hidden md:block">
+        O tohle mám zájem
+      </p>
     </a>
     <div class="px-2 flex flex-col gap-6">
       <h4 class="font-sans font-bold text-2xl normal-case">Balíček obsahuje</h4>

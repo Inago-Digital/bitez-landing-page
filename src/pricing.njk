@@ -4,40 +4,48 @@ title: Bitez - Ceny
 permalink: "pricing.html"
 ---
 
-<header class="mt-30 px-5">
-  <h3 class="text-center text-primary text-[28px] leading-[34px] mb-4">
+<header class="mt-30 px-5 flex flex-col items-center md:p-12">
+  <h3
+    class="text-center text-primary text-[28px] leading-[34px] mb-4 md:mb-10 md:text-[40px] md:leading-[46px]"
+  >
     Sociální sítě
     <br class="md:hidden" />
     od 250 Kč za den
   </h3>
-  <h2 class="text-center text-[44px] leading-[52px] mb-8">
+  <h2 class="text-center text-[44px] leading-[52px] mb-8 md:mb-10 md:text-7xl">
     Dostupný
     <br class="md:hidden" />
     gastro
-    <br class="md:hidden" />
+    <br />
     marketing
   </h2>
-  <p class="text-center text-xl mb-10">
+  <p
+    class="text-center text-xl mb-10 md:leading-[26px] md:text-[22px] max-w-200"
+  >
     Víme, že <strong>provozování gastro</strong> podniku
     <strong>není jednoduché</strong>. Nabízíme vám však podmínky, které
     <strong>nezatíží váš rozpočet</strong>.
   </p>
 
-  <div class="grid grid-cols-1 gap-6">
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:items-end">
     {% for plan in plans %} {% include 'partials/plan-item.njk' %} {% endfor %}
   </div>
 </header>
 
-<section class="px-5 py-18 bg-accent -mb-18">
-  <h2 class="text-center text-[54px] leading-[64px] mb-8">
+<section
+  class="px-5 py-18 bg-accent -mb-18 md:px-36 flex flex-col items-center"
+>
+  <h2 class="text-center text-[54px] leading-[64px] mb-8 md:mb-12 md:text-7xl">
     Kdy uvidíte výsledky?
   </h2>
-  <p class="text-center text-xl mb-10">
+  <p
+    class="text-center text-xl mb-10 md:leading-[26px] md:text-[22px] max-w-200"
+  >
     Potřebujete začít rychle komunikovat na sítích? Sociální sítě vašeho podniku
     rozhýbeme <strong>během sedmí dní</strong>.
   </p>
 
-  <div class="grid grid-cols-1 gap-6">
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
     <div class="flex flex-col bg-white p-8 rounded-xl">
       <div class="flex items-center w-full">
         <h3 class="w-2/3 text-3xl mb-5">
