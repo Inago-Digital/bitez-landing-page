@@ -77,40 +77,59 @@
   >
     <nav
   data-navigation
-  class="bg-white shadow-xl flex items-center justify-between p-4 px-6 rounded-full fixed top-2 left-2 z-100 w-[calc(100%-1rem)]"
+  class="bg-white shadow-xl flex items-center justify-between p-4 px-6 md:p-2 rounded-full fixed top-2 left-2 z-100 w-[calc(100%-1rem)]"
 >
-  <a href="/">
+  <a href="/" class="md:ml-8">
     <img
       src="./assets/logo/bitez_logo_cervena.svg"
       alt="Bitez"
       class="h-auto w-30"
     />
   </a>
-  <div class="hidden md:flex items-center gap-6">
-    <a
-      href="/#features"
-      class="text-tertiary hover:text-primary transition-colors"
-      >Features</a
+
+  <ul class="hidden md:flex items-center gap-8 text-xl font-champ">
+    <li>
+      <a
+        href="/"
+        class="text-tertiary uppercase hover:text-primary transition-colors"
+        >Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/how-does-it-work"
+        class="text-tertiary uppercase hover:text-primary transition-colors"
+        >Jak to funguje
+      </a>
+    </li>
+    <li>
+      <a
+        href="/pricing"
+        class="text-tertiary uppercase hover:text-primary transition-colors"
+        >Ceny
+      </a>
+    </li>
+    <li>
+      <a
+        href="/contact"
+        class="text-tertiary uppercase hover:text-primary transition-colors"
+        >Kontakt
+      </a>
+    </li>
+  </ul>
+
+  <a
+    href="#"
+    class="hidden md:flex bg-accent border border-accent text-white p-2 rounded-full items-center w-54 transition-colors hover:bg-accent-dark hover:border-accent-dark"
+  >
+    <div
+      class="bg-white rounded-full w-12 h-12 flex items-center justify-center"
     >
-    <a
-      href="/#pricing"
-      class="text-tertiary hover:text-primary transition-colors"
-      >Pricing</a
-    >
-    <a href="/#faq" class="text-tertiary hover:text-primary transition-colors"
-      >FAQ</a
-    >
-    <a
-      href="/contact"
-      class="text-tertiary hover:text-primary transition-colors"
-      >Contact</a
-    >
-    <a
-      href="/login"
-      class="bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary transition-colors"
-      >Login</a
-    >
-  </div>
+      <i data-lucide="chevron-right" class="text-tertiary w-9 h-9"></i>
+    </div>
+    <p class="text-lg font-bold text-tertiary mx-auto">Chci začít</p>
+  </a>
+
   <div
     data-mobile-menu-toggle
     class="flex flex-col gap-1.5 cursor-pointer md:hidden"
@@ -125,44 +144,56 @@
   data-mobile-menu
   class="fixed inset-0 bg-muted hidden flex-col items-center gap-6 p-5 z-50"
 >
-  <div class="flex flex-col items-center gap-3 text-xl w-full font-champ pt-24">
-    <a
-      href="/"
-      class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
-      >Home
-      <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
-    </a>
-    <a
-      href="/how-does-it-work"
-      class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
-      >Jak to funguje
-      <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
-    </a>
-    <a
-      href="/pricing"
-      class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
-      >Ceny
-      <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
-    </a>
-    <a
-      href="/contact"
-      class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
-      >Kontakt
-      <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
-    </a>
-    <a
-      href="/faq"
-      class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
-      >Časté dotazy
-      <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
-    </a>
-    <a
-      href="#"
-      class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
-      >⭐ Inventura Instagramu
-      <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
-    </a>
-  </div>
+  <ul class="flex flex-col items-center gap-3 text-xl w-full font-champ pt-24">
+    <li class="w-full">
+      <a
+        href="/"
+        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+        >Home
+        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+      </a>
+    </li>
+    <li class="w-full">
+      <a
+        href="/how-does-it-work"
+        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+        >Jak to funguje
+        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+      </a>
+    </li>
+    <li class="w-full">
+      <a
+        href="/pricing"
+        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+        >Ceny
+        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+      </a>
+    </li>
+    <li class="w-full">
+      <a
+        href="/contact"
+        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+        >Kontakt
+        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+      </a>
+    </li>
+    <li class="w-full">
+      <a
+        href="/faq"
+        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+        >Časté dotazy
+        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+      </a>
+    </li>
+    <li class="w-full">
+      <a
+        href="#"
+        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+        >⭐ Inventura Instagramu
+        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+      </a>
+    </li>
+  </ul>
 
   <p class="text-2xl text-primary font-champ underline mt-4">
     Stáhněte si aplikaci
@@ -190,12 +221,17 @@
 
     
 <header
-  class="bg-primary h-screen p-3 pt-16 flex flex-col items-center justify-center gap-4"
+  class="bg-primary h-screen p-3 pt-16 flex flex-col items-center justify-center gap-4 md:gap-10"
 >
-  <h2 class="text-3xl text-accent">Ukousněte si víc</h2>
-  <div class="flex flex-col gap-8 items-center mb-8">
-    <h1 class="text-5xl text-[54px] leading-[64px] text-white text-center">
-      Marketing pro restaurace
+  <h2 class="text-3xl text-accent md:text-[40px] md:leading-[46px]">
+    Ukousněte si víc
+  </h2>
+
+  <div class="md:hidden flex flex-col gap-8 items-center mb-6">
+    <h1 class="text-[54px] leading-[64px] text-white text-center">
+      Marketing pro
+      <br />
+      restaurace
     </h1>
     <p class="text-white text-center text-xl">
       Profesionální <strong>správa sociálních sítí</strong> pro restaurace,
@@ -203,7 +239,21 @@
       <strong>zvýšit jejich útratu</strong>.
     </p>
   </div>
-  <div class="flex flex-col gap-4 items-center">
+
+  <div class="hidden md:flex flex-col gap-10 items-center">
+    <h1 class="text-white text-center text-9xl">
+      Gastro marketing
+      <br />
+      v appce
+    </h1>
+    <p class="text-white text-center leading-[26px] text-[22px] max-w-256">
+      Profesionální <strong>správa sociálních</strong> sítí pro restaurace,
+      kavárny a bary <strong>v jednoduché aplikaci</strong>. Pomáháme gastro
+      podnikům přilákat více hostů a <strong>zvýšit jejich útratu</strong>.
+    </p>
+  </div>
+
+  <div class="flex flex-col gap-4 items-center md:flex-row">
     <a
       href="#"
       class="bg-tertiary border border-tertiary text-tertiary p-2 rounded-full flex items-center w-66 gap-5 group hover:border-dark hover:bg-dark transition-colors"
@@ -233,13 +283,19 @@
   </div>
 </header>
 
-<main class="p-5">
-  <h1 class="text-5xl text-[54px] leading-[64px] text-center mb-10">
-    Co uděláme pro vaše sociální sítě?
+<main class="p-5 md:p-12">
+  <h1
+    class="text-5xl text-[54px] leading-[64px] text-center mb-10 md:mb-13 md:text-8xl"
+  >
+    Co uděláme pro vaše
+    <br class="hidden md:block" />
+    sociální sítě?
   </h1>
 
-  <div class="grid grid-cols-1 gap-6">
-    <div class="flex flex-col gap-10 items-center bg-white p-8 rounded-xl">
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-4 md:gap-8">
+    <div
+      class="flex flex-col gap-10 items-center bg-white p-8 rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)]"
+    >
       <div class="flex items-center w-full">
         <h2 class="w-1/2 text-3xl">Správa profilů</h2>
         <span class="w-1/2">
@@ -253,7 +309,9 @@
       </p>
     </div>
 
-    <div class="flex flex-col gap-10 items-center bg-white p-8 rounded-xl">
+    <div
+      class="flex flex-col gap-10 items-center bg-white p-8 rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)]"
+    >
       <div class="flex items-center w-full">
         <h2 class="w-1/2 text-3xl">Fotky a videa</h2>
         <span class="w-1/2">
@@ -267,7 +325,9 @@
       </p>
     </div>
 
-    <div class="flex flex-col gap-10 items-center bg-white p-8 rounded-xl">
+    <div
+      class="flex flex-col gap-10 items-center bg-white p-8 rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)]"
+    >
       <div class="flex items-center w-full">
         <h2 class="w-1/2 text-3xl">Grafika</h2>
         <span class="w-1/2">
@@ -281,7 +341,9 @@
       </p>
     </div>
 
-    <div class="flex flex-col gap-10 items-center bg-white p-8 rounded-xl">
+    <div
+      class="flex flex-col gap-10 items-center bg-white p-8 rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)]"
+    >
       <div class="flex items-center w-full">
         <h2 class="w-1/2 text-3xl">Sponzoring</h2>
         <span class="w-1/2">
@@ -302,13 +364,16 @@
 
 <section class="relative flex flex-col items-center overflow-hidden">
   <div class="px-5">
-    <h3 class="text-center text-primary text-[28px] leading-[34px] mb-4">
+    <h3
+      class="text-center text-primary text-[28px] leading-[34px] mb-4 md:mb-10 md:text-[40px] md:leading-[46px]"
+    >
       Chytré řešení pro
       <br class="md:hidden" />
       váš podnik
     </h3>
-    <h2 class="text-center text-[44px] leading-[52px] mb-8">
-      Gastro marketing<br class="md:hidden" />
+    <h2 class="text-center text-[44px] leading-[52px] mb-8 md:text-7xl">
+      Gastro marketing
+      <br />
       ve vašem mobilu.
     </h2>
     <p class="text-center text-xl px-2">
@@ -329,9 +394,11 @@
     ></div>
   </div>
 
-  <div class="flex flex-col gap-4 -mt-20 mb-10 px-5 relative z-10 w-full">
+  <div
+    class="flex flex-col gap-4 -mt-20 mb-10 px-5 relative z-10 w-full md:absolute md:bottom-70 md:flex-row md:gap-80 md:justify-center"
+  >
     <ul
-      class="flex flex-col bg-white px-6 py-8 gap-6 rounded-xl w-full shadow-lg"
+      class="flex flex-col bg-white px-6 py-8 gap-6 rounded-xl w-full md:w-80 shadow-lg"
     >
       <li class="flex items-center gap-4 text-lg font-bold">
         <i
@@ -357,7 +424,7 @@
     </ul>
 
     <ul
-      class="flex flex-col bg-white px-6 py-8 gap-6 rounded-xl w-full shadow-lg"
+      class="flex flex-col bg-white px-6 py-8 gap-6 rounded-xl w-full md:w-80 shadow-lg"
     >
       <li class="flex items-center gap-4 text-lg font-bold">
         <i
@@ -385,7 +452,7 @@
 
   <a
     href="#"
-    class="relative bg-light-green h-19 border border-light-green text-white p-2 rounded-full flex items-center justify-center w-11/12 gap-5 transition-colors group hover:bg-dark-green hover:border-dark-green"
+    class="relative bg-light-green h-19 border border-light-green text-white p-2 rounded-full flex items-center justify-center w-11/12 gap-5 transition-colors group hover:bg-dark-green hover:border-dark-green max-w-72 md:mt-20"
   >
     <div
       class="bg-white rounded-full w-15 h-15 flex items-center justify-center absolute left-2"
@@ -400,10 +467,12 @@
 </section>
 
 <section class="px-5 flex flex-col items-center gap-10">
-  <h2 class="text-center text-[54px] leading-[64px]">
+  <h2 class="text-center text-[54px] leading-[64px] md:text-7xl">
     Jak to funguje?
   </h2>
-  <p class="text-center text-xl px-2">
+  <p
+    class="text-center text-xl px-2 md:leading-[26px] md:text-[22px] max-w-175"
+  >
      Pro majitele gastro podniků
     jsme vytvořili speciální marketingovou službu, díky které budete na
     <strong>sociálních sítích nepřehlédnutelní</strong>. 
@@ -415,19 +484,23 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen
-    class="w-full h-auto aspect-video rounded-xl outline-none"
+    class="w-full h-auto aspect-video rounded-xl outline-none max-w-200"
   ></iframe>
 </section>
 
 
 <section class="bg-accent px-5 py-18 flex flex-col items-center gap-10">
-  <h2 class="text-center text-[54px] leading-[64px]">Co to znamená pro vás?</h2>
-  <p class="text-center text-xl px-2">
+  <h2 class="text-center text-[54px] leading-[64px] md:text-7xl">
+    Co to znamená pro vás?
+  </h2>
+  <p
+    class="text-center text-xl px-2 md:leading-[26px] md:text-[22px] max-w-175"
+  >
     Pro majitele gastro podniků jsme vytvořili speciální marketingovou službu,
     díky které budete na sociálních sítích nepřehlédnutelní.
   </p>
 
-  <div class="grid grid-cols-1 gap-6">
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8 max-w-310">
     <div class="flex flex-col bg-white p-8 rounded-xl">
       <h2 class="text-3xl mb-5">Ušetříte spoustu času</h2>
       <div class="flex items-center w-full">
@@ -485,31 +558,38 @@
   </div>
 </section>
 
-<section class="relative flex flex-col items-center px-5">
-  <h3 class="text-center text-primary leading-[30px] text-[28px] mb-4">
+<section class="relative flex flex-col items-center px-5 md:p-12">
+  <h3
+    class="text-center text-primary leading-[30px] text-[28px] mb-4 md:mb-10 md:text-[40px] md:leading-[46px]"
+  >
     Marketing za dostupnou cenu
   </h3>
-  <h2 class="text-center leading-[52px] text-[44px] mb-8">
-    <span class="text-primary">4x levnější</span> než průměrná marketingová
-    agentura
+  <h2 class="text-center leading-[52px] text-[44px] mb-8 md:mb-12 md:text-7xl">
+    <span class="text-primary">4x levnější</span> než průměrná
+    <br class="hidden md:block" />
+    marketingová agentura
   </h2>
-  <p class="text-center text-xl px-2 mb-10">
+  <p
+    class="text-center text-xl px-2 mb-10 md:leading-[26px] md:text-[22px] max-w-175"
+  >
     Pomocí <strong>jednoduché aplikace</strong> budete ve spojení se
     specialistkou, která se stará o <strong>marketing vaší restaurace</strong>.
   </p>
 
-  <div class="grid grid-cols-1 gap-6">
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 w-full">
     <div
-      class="flex flex-col border-gray border-2 bg-white px-4 py-12 rounded-xl gap-4 items-center"
+      class="flex flex-col border-gray border-2 bg-white px-4 py-12 rounded-xl gap-4 items-center w-full"
     >
       <h3 class="text-center leading-[46px] text-[40px]">Běžná agentura</h3>
-      <h4 class="text-center text-primary leading-[56px] text-[48px]">
+      <h4
+        class="text-center text-primary leading-[56px] text-[48px] md:text-6xl"
+      >
         od 25.000 Kč
       </h4>
       <p class="text-center mb-4">
         Průměrná cena <strong>s měsíční platbou a smlouvou</strong>.
       </p>
-      <div class="flex flex-col gap-2 items-center mb-4">
+      <div class="flex flex-col gap-2 items-center mb-4 md:my-auto">
         <p class="bg-gray w-fit px-4 py-1 font-semibold rounded-full">
           Maximálně 20 hodin práce
         </p>
@@ -520,7 +600,7 @@
           Zdlouhavé procesy
         </p>
       </div>
-      <p class="text-center text-blue-gray text-base">
+      <p class="text-center text-blue-gray text-base max-w-100">
         Cena odpovídá průměrnému agenturnímu fee s počtem 20 hodin měsíčně.
       </p>
     </div>
@@ -534,7 +614,9 @@
           <br class="md:hidden" />
           od Bitez
         </h3>
-        <h4 class="text-center text-primary leading-[56px] text-[48px] mb-4">
+        <h4
+          class="text-center text-primary leading-[56px] text-[48px] mb-4 md:text-6xl"
+        >
           8.900 Kč
         </h4>
         <p class="text-center">
@@ -547,13 +629,13 @@
           data-lucide="check"
           class="w-6 h-6 p-1 bg-white rounded-full text-primary stroke-5"
         ></i>
-        <p class="font-semibold text-white px-6">
+        <p class="font-semibold text-white px-6 max-w-100">
           Stejné služby jako od agentury
         </p>
       </div>
       <a
         href="#"
-        class="relative bg-light-green h-19 border border-light-green text-white p-2 rounded-full flex items-center justify-center w-full gap-5 transition-colors group hover:bg-dark-green hover:border-dark-green"
+        class="relative bg-light-green h-19 border border-light-green text-white p-2 rounded-full flex items-center justify-center w-full gap-5 transition-colors group hover:bg-dark-green hover:border-dark-green max-w-72"
       >
         <div
           class="bg-white rounded-full w-15 h-15 flex items-center justify-center absolute left-2"
@@ -575,17 +657,21 @@
   </div>
 </section>
 
-<section class="bg-white py-18 px-5 flex flex-col items-center gap-10 -mb-18">
-  <h2 class="text-center text-primary leading-[64px] text-[54px]">
+<section
+  class="bg-white py-18 px-5 flex flex-col items-center gap-10 -mb-18 md:px-12"
+>
+  <h2 class="text-center text-primary leading-[64px] text-[54px] md:text-7xl">
     Co říkají
     <br class="md:hidden" />
     naši
     <br class="md:hidden" />
     klienti?
   </h2>
-  <div class="grid grid-cols-1 gap-6">
+  <div
+    class="flex flex-col gap-6 md:flex-row md:justify-center w-full flex-wrap"
+  >
     <div
-      class="p-8 bg-white rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] flex flex-col gap-4"
+      class="p-8 bg-white rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] flex flex-col gap-4 md:w-[calc(25%-1.5rem)]"
     >
       <div class="flex items-center">
         <img
@@ -613,7 +699,7 @@
     </div>
 
     <div
-      class="p-8 bg-white rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] flex flex-col gap-4"
+      class="p-8 bg-white rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] flex flex-col gap-4 md:w-[calc(25%-1.5rem)]"
     >
       <div class="flex items-center">
         <img
@@ -641,7 +727,35 @@
     </div>
 
     <div
-      class="p-8 bg-white rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] flex flex-col gap-4"
+      class="p-8 bg-white rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] flex flex-col gap-4 md:w-[calc(25%-1.5rem)]"
+    >
+      <div class="flex items-center">
+        <img
+          src="https://api.dicebear.com/9.x/lorelei/svg?size=68&seed=Daniel"
+          alt="Quote"
+          class="w-17 h-17"
+        />
+        <div>
+          <p class="font-bold leading-[26px] text-[22px]">Daniel</p>
+          <p class="text-base text-blue-gray">Restaurace U Zlatého kohouta</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-px">
+        <i data-lucide="star" class="w-6 h-6 text-accent fill-accent"></i>
+        <i data-lucide="star" class="w-6 h-6 text-accent fill-accent"></i>
+        <i data-lucide="star" class="w-6 h-6 text-accent fill-accent"></i>
+        <i data-lucide="star" class="w-6 h-6 text-accent fill-accent"></i>
+        <i data-lucide="star" class="w-6 h-6 text-accent fill-accent"></i>
+      </div>
+      <p>
+        Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Fusce
+        dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Integer
+        imperdiet lectus quis justo. Sed ut perspiciatis unde omnis.
+      </p>
+    </div>
+
+    <div
+      class="p-8 bg-white rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] flex flex-col gap-4 md:w-[calc(25%-1.5rem)]"
     >
       <div class="flex items-center">
         <img
@@ -670,12 +784,14 @@
   </div>
 </section>
 
-<section class="bg-primary py-10 px-5 flex flex-col items-center gap-10">
-  <h1 class="text-center text-white leading-[64px] text-[54px]">
+<section
+  class="bg-primary py-10 px-5 flex flex-col items-center gap-10 md:flex-row md:justify-center md:gap-20"
+>
+  <h1 class="text-center text-white leading-[64px] text-[54px] md:text-7xl">
     Chci začít dělat marketing
   </h1>
   <a
-    class="bg-accent border border-accent font-extrabold w-full text-center py-6 rounded-full text-lg hover:bg-accent-dark hover:border-accent-dark transition-colors"
+    class="bg-accent border border-accent font-extrabold w-full md:w-56 text-center py-6 rounded-full text-lg hover:bg-accent-dark hover:border-accent-dark transition-colors"
     href="#"
   >
     Chci začít
@@ -684,127 +800,129 @@
 
 
 
-    <footer class="bg-tertiary -mt-18 px-8 py-10 flex flex-col gap-10">
-  <div class="flex flex-col gap-2">
-    <img
-      src="./assets/logo/bitez_logo_cervena.svg"
-      alt="Bitez"
-      class="h-auto w-30"
-    />
-    <p class="text-light-gray text-base">Bitez Technology s.r.o.</p>
-  </div>
+    <footer class="bg-tertiary -mt-18 px-8 py-10 flex flex-col gap-10 md:pt-16">
+  <div class="flex flex-col md:flex-row md:justify-between gap-10">
+    <div class="flex flex-col gap-2">
+      <img
+        src="./assets/logo/bitez_logo_bila.svg"
+        alt="Bitez"
+        class="h-auto w-30"
+      />
+      <p class="text-light-gray text-base">Bitez Technology s.r.o.</p>
+    </div>
 
-  <ul class="flex flex-col gap-2">
-    <li>
-      <a
-        href="/"
-        class="text-2xl text-light-gray hover:text-white transition-colors font-champ underline"
-      >
-        Home
-      </a>
-    </li>
-    <li>
-      <a
-        href="/how-does-it-work"
-        class="text-2xl text-light-gray hover:text-white transition-colors font-champ underline"
-      >
-        Jak to funguje
-      </a>
-    </li>
-    <li>
-      <a
-        href="/pricing"
-        class="text-2xl text-light-gray hover:text-white transition-colors font-champ underline"
-      >
-        Ceny
-      </a>
-    </li>
-    <li>
-      <a
-        href="/contact"
-        class="text-2xl text-light-gray hover:text-white transition-colors font-champ underline"
-      >
-        Kontakt
-      </a>
-    </li>
-    <li>
-      <a
-        href="/faq"
-        class="text-2xl text-light-gray hover:text-white transition-colors font-champ underline"
-      >
-        Časté dotazy
-      </a>
-    </li>
-  </ul>
-
-  <div>
-    <p class="text-2xl text-white font-champ underline mb-4">
-      Stáhněte si aplikaci
-    </p>
     <ul class="flex flex-col gap-2">
       <li>
-        <a href="#">
-          <img
-            src="./assets/graphic/google-play-badge.png"
-            alt="Get it on Google Play"
-            class="hauto w-40"
-          />
+        <a
+          href="/"
+          class="text-2xl text-light-gray hover:text-white transition-colors font-champ underline"
+        >
+          Home
         </a>
       </li>
       <li>
-        <a href="#">
-          <img
-            src="./assets/graphic/app-store-badge.png"
-            alt="Download on the App Store"
-            class="h-auto w-40"
-          />
+        <a
+          href="/how-does-it-work"
+          class="text-2xl text-light-gray hover:text-white transition-colors font-champ underline"
+        >
+          Jak to funguje
+        </a>
+      </li>
+      <li>
+        <a
+          href="/pricing"
+          class="text-2xl text-light-gray hover:text-white transition-colors font-champ underline"
+        >
+          Ceny
+        </a>
+      </li>
+      <li>
+        <a
+          href="/contact"
+          class="text-2xl text-light-gray hover:text-white transition-colors font-champ underline"
+        >
+          Kontakt
+        </a>
+      </li>
+      <li>
+        <a
+          href="/faq"
+          class="text-2xl text-light-gray hover:text-white transition-colors font-champ underline"
+        >
+          Časté dotazy
         </a>
       </li>
     </ul>
-  </div>
 
-  <div>
-    <p class="text-2xl text-white font-champ underline mb-4">Kontakt</p>
-    <ul>
-      <li>
-        <a
-          href="tel:+420 726 772 820"
-          class="text-white text-2xl font-champ hover:underline"
-        >
-          +420 726 772 820
-        </a>
-      </li>
-      <li>
-        <a
-          href="mailto:ahoj@bitez.cz"
-          class="text-white text-2xl font-champ hover:underline"
-        >
-          ahoj@bitez.cz
-        </a>
-      </li>
-    </ul>
-  </div>
+    <div>
+      <p class="text-2xl text-white font-champ underline mb-4">
+        Stáhněte si aplikaci
+      </p>
+      <ul class="flex flex-col gap-2">
+        <li>
+          <a href="#">
+            <img
+              src="./assets/graphic/google-play-badge.png"
+              alt="Get it on Google Play"
+              class="hauto w-40"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="./assets/graphic/app-store-badge.png"
+              alt="Download on the App Store"
+              class="h-auto w-40"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
 
-  <div>
-    <p class="text-2xl text-white font-champ underline mb-4">Sledujte nás</p>
-    <ul class="flex gap-4 w-full">
-      <li>
-        <a
-          href="#"
-          class="p-6 block bg-primary rounded-xl hover:bg-secondary transition-colors"
-        >
-          <i data-lucide="instagram" class="text-white w-8 h-8"></i>
-        </a>
-      </li>
-      <li>
-        <a
-          href="#"
-          class="p-6 block bg-primary rounded-xl hover:bg-secondary transition-colors"
-        >
-          <i data-lucide="facebook" class="text-white w-8 h-8"></i>
-        </a>
-      </li>
-    </ul>
+    <div>
+      <p class="text-2xl text-white font-champ underline mb-4">Kontakt</p>
+      <ul>
+        <li>
+          <a
+            href="tel:+420 726 772 820"
+            class="text-white text-2xl font-champ hover:underline"
+          >
+            +420 726 772 820
+          </a>
+        </li>
+        <li>
+          <a
+            href="mailto:ahoj@bitez.cz"
+            class="text-white text-2xl font-champ hover:underline"
+          >
+            ahoj@bitez.cz
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="md:mr-20">
+      <p class="text-2xl text-white font-champ underline mb-4">Sledujte nás</p>
+      <ul class="flex gap-4 w-full">
+        <li>
+          <a
+            href="#"
+            class="p-6 block bg-primary rounded-xl hover:bg-secondary transition-colors"
+          >
+            <i data-lucide="instagram" class="text-white w-8 h-8"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="p-6 block bg-primary rounded-xl hover:bg-secondary transition-colors"
+          >
+            <i data-lucide="facebook" class="text-white w-8 h-8"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 
   <ul>
