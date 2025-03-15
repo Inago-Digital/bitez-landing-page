@@ -3,12 +3,14 @@
     data-faq-question
     class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase md:text-[28px] md:leading-[34px]"
   >
-    <span class="w-7/8 md:text-left">{{ item.question }}</span>
-    <i
-      data-faq-icon
-      data-lucide="chevron-down"
-      class="w-6 md:w-10 h-6 md:h-10 transition-transform text-primary stroke-3 w-1/8"
-    ></i>
+    <span class="w-[90%] text-left">{{ item.question }}</span>
+    <span class="w-[10%]">
+      <i
+        data-faq-icon
+        data-lucide="chevron-down"
+        class="w-6 md:w-10 h-6 md:h-10 transition-transform text-primary stroke-[3px] ml-auto"
+      ></i>
+    </span>
   </button>
   <div
     data-faq-answer
