@@ -69,7 +69,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body
     class="{% if not '/faq' in page.url %}bg-muted{% endif %} flex flex-col gap-[72px]"
@@ -79,12 +79,7 @@
     {{ content | safe }}
 
     {% include "partials/footer.njk" %}
-
-    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="./js/global.js"></script>
-    <script src="./js/email-template.js"></script>
-    <script>
-      lucide.createIcons()
-    </script>
+    <script src="./js/icons.js" type="module"></script>
   </body>
 </html>

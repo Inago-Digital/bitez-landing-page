@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return alert("Please enter a valid email address.")
       }
 
-      if (!data.name || !data.email || !data.phone || !data.company) {
+      if (!data.name || !data.email || !data.phone) {
         return alert("Please fill out all fields.")
       }
 
@@ -124,6 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const response = await fetch("https://email.hangerthem.com/send", {
           method: "POST",
           body: JSON.stringify({
+            to: "adam@bitez.cz",
             name: data.name,
             email: data.email,
             message:
