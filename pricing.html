@@ -69,7 +69,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body
     class="bg-muted flex flex-col gap-[72px]"
@@ -115,13 +115,7 @@
         >Kontakt
       </a>
     </li>
-    <li>
-      <a
-        href="/instagram-inventory"
-        class="text-tertiary uppercase hover:text-primary transition-colors"
-        >⭐ Inventura Instagramu
-      </a>
-    </li>
+    
   </ul>
 
   <a
@@ -191,37 +185,10 @@
         <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
       </a>
     </li>
-    <li class="w-full">
-      <a
-        href="/instagram-inventory"
-        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
-        >⭐ Inventura Instagramu
-        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
-      </a>
-    </li>
+    
   </ul>
 
-  <p class="text-2xl text-primary font-champ underline mt-4">
-    Stáhněte si aplikaci
-  </p>
-  <ul class="flex gap-2">
-    <li>
-      <a href="#">
-        <img
-          src="./assets/graphic/google-play-badge.png"
-          alt="Google Play"
-          class="h-[40px] w-auto"
-      /></a>
-    </li>
-    <li>
-      <a href="#">
-        <img
-          src="./assets/graphic/app-store-badge.png"
-          alt="App Store"
-          class="h-[40px] w-auto"
-      /></a>
-    </li>
-  </ul>
+  
 </div>
 
 
@@ -912,31 +879,7 @@
       </li>
     </ul>
 
-    <div>
-      <p class="text-2xl text-white font-champ underline mb-4">
-        Stáhněte si aplikaci
-      </p>
-      <ul class="flex flex-col gap-2">
-        <li>
-          <a href="#">
-            <img
-              src="./assets/graphic/google-play-badge.png"
-              alt="Get it on Google Play"
-              class="hauto w-40"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="./assets/graphic/app-store-badge.png"
-              alt="Download on the App Store"
-              class="h-auto w-40"
-            />
-          </a>
-        </li>
-      </ul>
-    </div>
+    
 
     <div>
       <p class="text-2xl text-white font-champ underline mb-4">Kontakt</p>
@@ -965,7 +908,8 @@
       <ul class="flex gap-4 w-full">
         <li>
           <a
-            href="#"
+            href="https://www.instagram.com/bitez.cz/"
+            target="_blank"
             class="p-6 block bg-primary rounded-xl hover:bg-secondary transition-colors"
           >
             <i data-lucide="instagram" class="text-white w-8 h-8"></i>
@@ -974,6 +918,7 @@
         <li>
           <a
             href="#"
+            target="_blank"
             class="p-6 block bg-primary rounded-xl hover:bg-secondary transition-colors"
           >
             <i data-lucide="facebook" class="text-white w-8 h-8"></i>
@@ -985,20 +930,17 @@
 
   <ul>
     <li>
-      <a href="#" class="text-light-gray text-base"> Podmínky používání </a>
+      <a href="#" class="text-light-gray text-base">Podmínky používání</a>
     </li>
     <li>
-      <a href="#" class="text-light-gray text-base"> Ochrana osobních údajů </a>
+      <a href="/gdpr" class="text-light-gray text-base"
+        >Ochrana osobních údajů</a
+      >
     </li>
   </ul>
 </footer>
 
-
-    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="./js/global.js"></script>
-    <script src="./js/email-template.js"></script>
-    <script>
-      lucide.createIcons()
-    </script>
+    <script src="./js/icons.js" type="module"></script>
   </body>
 </html>

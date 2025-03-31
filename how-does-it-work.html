@@ -69,7 +69,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body
     class="bg-muted flex flex-col gap-[72px]"
@@ -115,13 +115,7 @@
         >Kontakt
       </a>
     </li>
-    <li>
-      <a
-        href="/instagram-inventory"
-        class="text-tertiary uppercase hover:text-primary transition-colors"
-        >⭐ Inventura Instagramu
-      </a>
-    </li>
+    
   </ul>
 
   <a
@@ -191,37 +185,10 @@
         <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
       </a>
     </li>
-    <li class="w-full">
-      <a
-        href="/instagram-inventory"
-        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
-        >⭐ Inventura Instagramu
-        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
-      </a>
-    </li>
+    
   </ul>
 
-  <p class="text-2xl text-primary font-champ underline mt-4">
-    Stáhněte si aplikaci
-  </p>
-  <ul class="flex gap-2">
-    <li>
-      <a href="#">
-        <img
-          src="./assets/graphic/google-play-badge.png"
-          alt="Google Play"
-          class="h-[40px] w-auto"
-      /></a>
-    </li>
-    <li>
-      <a href="#">
-        <img
-          src="./assets/graphic/app-store-badge.png"
-          alt="App Store"
-          class="h-[40px] w-auto"
-      /></a>
-    </li>
-  </ul>
+  
 </div>
 
 
@@ -265,9 +232,9 @@
           <span class="text-primary">Bára</span>
         </h4>
         <img
-          src="https://api.dicebear.com/9.x/lorelei/svg?size=68&seed=Bára"
-          alt="Quote"
-          class="ml-auto w-[58px] h-[58px]"
+          src="./assets/images/bara.png"
+          alt="Bára"
+          class="ml-auto w-[100px] h-[100px] rounded-full"
         />
       </div>
       <div class="flex items-center">
@@ -334,9 +301,9 @@
           <span class="text-primary">podniku</span>
         </h4>
         <img
-          src="https://api.dicebear.com/9.x/lorelei/svg?size=68&seed=Jan"
-          alt="Quote"
-          class="ml-auto md:mr-auto md:ml-0 w-[58px] h-[58px]"
+          src="https://api.dicebear.com/9.x/lorelei/svg?size=100&seed=Jan"
+          alt="Jan"
+          class="ml-auto md:mr-auto md:ml-0 w-[100px] h-[100px]"
         />
       </div>
       <div class="flex items-center md:flex-row-reverse md:text-right">
@@ -360,27 +327,6 @@
   </div>
 </header>
 
-<section class="px-5 flex flex-col items-center gap-10">
-  <h2 class="text-center text-[54px] leading-[54px] md:text-7xl">
-    Jak to funguje?
-  </h2>
-  <p
-    class="text-center text-xl px-2 md:leading-[34px] md:text-[22px] max-w-[800px]"
-  >
-     Bitez je
-    <strong>gastro marketing přímo ve vašem mobilu</strong> - s námi budete mít
-    dokonalý přehled o marketingu vašeho podniku. 
-  </p>
-  <iframe
-    src="https://www.youtube.com/embed/xi2D5WX6AZo?si=izonyit6kyYuhBkz"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen
-    class="w-full h-auto aspect-video rounded-xl outline-none max-w-[800px]"
-  ></iframe>
-</section>
 
 
 <section
@@ -947,31 +893,7 @@
       </li>
     </ul>
 
-    <div>
-      <p class="text-2xl text-white font-champ underline mb-4">
-        Stáhněte si aplikaci
-      </p>
-      <ul class="flex flex-col gap-2">
-        <li>
-          <a href="#">
-            <img
-              src="./assets/graphic/google-play-badge.png"
-              alt="Get it on Google Play"
-              class="hauto w-40"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="./assets/graphic/app-store-badge.png"
-              alt="Download on the App Store"
-              class="h-auto w-40"
-            />
-          </a>
-        </li>
-      </ul>
-    </div>
+    
 
     <div>
       <p class="text-2xl text-white font-champ underline mb-4">Kontakt</p>
@@ -1000,7 +922,8 @@
       <ul class="flex gap-4 w-full">
         <li>
           <a
-            href="#"
+            href="https://www.instagram.com/bitez.cz/"
+            target="_blank"
             class="p-6 block bg-primary rounded-xl hover:bg-secondary transition-colors"
           >
             <i data-lucide="instagram" class="text-white w-8 h-8"></i>
@@ -1009,6 +932,7 @@
         <li>
           <a
             href="#"
+            target="_blank"
             class="p-6 block bg-primary rounded-xl hover:bg-secondary transition-colors"
           >
             <i data-lucide="facebook" class="text-white w-8 h-8"></i>
@@ -1020,20 +944,17 @@
 
   <ul>
     <li>
-      <a href="#" class="text-light-gray text-base"> Podmínky používání </a>
+      <a href="#" class="text-light-gray text-base">Podmínky používání</a>
     </li>
     <li>
-      <a href="#" class="text-light-gray text-base"> Ochrana osobních údajů </a>
+      <a href="/gdpr" class="text-light-gray text-base"
+        >Ochrana osobních údajů</a
+      >
     </li>
   </ul>
 </footer>
 
-
-    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="./js/global.js"></script>
-    <script src="./js/email-template.js"></script>
-    <script>
-      lucide.createIcons()
-    </script>
+    <script src="./js/icons.js" type="module"></script>
   </body>
 </html>

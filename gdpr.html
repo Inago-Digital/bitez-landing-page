@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bitez - GDPR</title>
+    <meta name="title" content="Bitez - GDPR" />
+    <meta
+      name="description"
+      content="Bite-sized content for modern audiences"
+    />
+    <meta
+      name="keywords"
+      content="bitez, content, platform"
+    />
+    <meta name="author" content="Bitez Team" />
+
+    <meta name="robots" content="index, follow" />
+
+    <link rel="canonical" href="https://bitez.cz/gdpr.html" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bitez.cz/gdpr.html" />
+    <meta property="og:title" content="Bitez - GDPR" />
+    <meta
+      property="og:description"
+      content="Bite-sized content for modern audiences"
+    />
+    <meta
+      property="og:image"
+      content="https://bitez.cz/assets/logo/bitez_logo_B.jpg"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://bitez.cz/gdpr.html" />
+    <meta name="twitter:title" content="Bitez - GDPR" />
+    <meta
+      name="twitter:description"
+      content="Bite-sized content for modern audiences"
+    />
+    <meta
+      name="twitter:image"
+      content="https://bitez.cz/assets/logo/bitez_logo_B.jpg"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Bitez" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+    <meta name="theme-color" content="#ee2554" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body
+    class="bg-muted flex flex-col gap-[72px]"
+  >
+    <nav
+  data-navigation
+  class="bg-white shadow-xl flex items-center justify-between p-4 px-6 md:p-2 rounded-full fixed top-2 md:top-5 left-2 md:left-5 z-[100] w-[calc(100%-1rem)] md:w-[calc(100%-2.5rem)]"
+>
+  <a href="/" class="md:ml-8">
+    <img
+      src="./assets/logo/bitez_logo_cervena.svg"
+      alt="Bitez"
+      class="h-auto w-[120px]"
+    />
+  </a>
+
+  <ul class="hidden md:flex items-center gap-8 text-xl font-champ">
+    <li>
+      <a
+        href="/"
+        class="text-tertiary uppercase hover:text-primary transition-colors"
+        >Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/how-does-it-work"
+        class="text-tertiary uppercase hover:text-primary transition-colors"
+        >Jak to funguje
+      </a>
+    </li>
+    <li>
+      <a
+        href="/pricing"
+        class="text-tertiary uppercase hover:text-primary transition-colors"
+        >Ceny
+      </a>
+    </li>
+    <li>
+      <a
+        href="/contact"
+        class="text-tertiary uppercase hover:text-primary transition-colors"
+        >Kontakt
+      </a>
+    </li>
+    
+  </ul>
+
+  <a
+    href="/contact"
+    class="hidden md:flex bg-accent border border-accent text-white p-2 rounded-full items-center w-[216px] transition-colors hover:bg-accent-dark hover:border-accent-dark"
+  >
+    <div
+      class="bg-white rounded-full w-12 h-12 flex items-center justify-center"
+    >
+      <i data-lucide="chevron-right" class="text-tertiary w-9 h-9"></i>
+    </div>
+    <p class="text-lg font-bold text-tertiary mx-auto">Chci začít</p>
+  </a>
+
+  <div
+    data-mobile-menu-toggle
+    class="flex flex-col gap-1.5 cursor-pointer md:hidden"
+  >
+    <div class="h-1 w-8 bg-primary rounded-full transition-all"></div>
+    <div class="h-1 w-8 bg-primary rounded-full transition-all"></div>
+    <div class="h-1 w-8 bg-primary rounded-full transition-all"></div>
+  </div>
+</nav>
+
+<div
+  data-mobile-menu
+  class="fixed inset-0 bg-muted hidden flex-col items-center gap-6 p-5 z-[50]"
+>
+  <ul class="flex flex-col items-center gap-3 text-xl w-full font-champ pt-24">
+    <li class="w-full">
+      <a
+        href="/"
+        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+        >Home
+        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+      </a>
+    </li>
+    <li class="w-full">
+      <a
+        href="/how-does-it-work"
+        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+        >Jak to funguje
+        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+      </a>
+    </li>
+    <li class="w-full">
+      <a
+        href="/pricing"
+        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+        >Ceny
+        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+      </a>
+    </li>
+    <li class="w-full">
+      <a
+        href="/contact"
+        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+        >Kontakt
+        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+      </a>
+    </li>
+    <li class="w-full">
+      <a
+        href="/faq"
+        class="text-tertiary uppercase w-full px-6 py-5 bg-white rounded-xl flex items-center justify-between hover:text-primary transition-colors"
+        >Časté dotazy
+        <i data-lucide="chevron-right" class="w-6 h-6 text-primary"></i>
+      </a>
+    </li>
+    
+  </ul>
+
+  
+</div>
+
+
+    
+<header
+  class="bg-primary pt-[120px] pb-[76px] px-5 flex flex-col items-center md:p-12 md:pt-[176px] md:justify-center"
+>
+  <h1
+    class="text-[42px] leading-[50px] text-white text-center md:text-[54px] md:leading-[62px] lg:text-7xl"
+  >
+    Zásady ochrany osobních údajů
+  </h1>
+</header>
+
+<main class="p-2 md:p-8 lg:p-12 max-w-[1200px] mx-auto">
+  <section class="mb-8 md:mb-10">
+    <h2 class="text-2xl text-center md:text-3xl text-primary mb-4 md:mb-6">
+      1. Správce osobních údajů a k čemu slouží tyto zásady ochrany osobních
+      údajů
+    </h2>
+
+    <div
+      class="bg-white p-5 md:p-8 rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] mb-4 md:mb-6"
+    >
+      <h3 class="text-xl md:text-2xl mb-3 md:mb-4">
+        1.1 Správce osobních údajů
+      </h3>
+      <p class="text-sm md:text-base mb-4">
+        Správce osobních údajů Bitez Technology s.r.o., se sídlem Ruprechtická
+        387/49, 460 01 Liberec 1, zapsaná v obchodním rejstříku vedeném u
+        Krajského soudu v Ústí nad Labem, oddíl C, vložka (dále jen „správce"),
+        prohlašuje, že veškeré osobní údaje zpracovávané správcem jsou přísně
+        důvěrné. Správce s nimi nakládá v souladu s vnitrostátními právními
+        předpisy i předpisy Evropské unie platnými v oblasti ochrany osobních
+        údajů.
+      </p>
+    </div>
+
+    <div
+      class="bg-white p-5 md:p-8 rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] mb-4 md:mb-6"
+    >
+      <h3 class="text-xl md:text-2xl mb-3 md:mb-4">1.2 Právní předpisy</h3>
+      <p class="text-sm md:text-base mb-4">
+        Správce shromažďuje, uchovává a využívá Vaše osobní údaje ve smyslu
+        zákona č. 110/2019 Sb. o zpracování osobních údajů (dále jen zákon o
+        zpracování osobních údajů) a nařízení Evropského parlamentu a Rady (EU)
+        2016/679 ze dne 27. dubna 2016, o ochraně fyzických osob v souvislosti
+        se zpracováním osobních údajů a o volném pohybu těchto údajů a o zrušení
+        směrnice 95/46/ES (dále jen „nařízení GDPR"). Jednotlivé účely, pro
+        které správce osobní údaje zpracovává, jsou dále vymezeny.
+      </p>
+    </div>
+
+    <div
+      class="bg-white p-5 md:p-8 rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] mb-4 md:mb-6"
+    >
+      <h3 class="text-xl md:text-2xl mb-3 md:mb-4">1.3 Shromažďování údajů</h3>
+      <p class="text-sm md:text-base mb-4">
+        Správce tyto osobní údaje shromažďuje i prostřednictvím svých
+        internetových stránek na adrese www.bitez.cz (dále jen „internetové
+        stránky").
+      </p>
+    </div>
+
+    <div
+      class="bg-white p-5 md:p-8 rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] mb-4 md:mb-6"
+    >
+      <h3 class="text-xl md:text-2xl mb-3 md:mb-4">1.4 Účel těchto zásad</h3>
+      <p class="text-sm md:text-base mb-4">
+        Tyto zásady vydává správce proto, abyste byli dostatečně informováni o
+        tom, jaké Vaše osobní údaje správce zpracovává, za jakým účelem, po
+        jakou dobu, kdo k Vašim osobním údajům bude mít přístup a jaká máte
+        práva. Tyto zásady se vztahují na všechny osobní údaje shromážděné
+        správcem, ať už byly shromážděny za účelem plnění smluvního vztahu,
+        právní povinnosti, oprávněného zájmu, nebo uděleného souhlasu.
+      </p>
+    </div>
+  </section>
+
+  <section class="mb-8 md:mb-10">
+    <h2 class="text-2xl text-center md:text-3xl text-primary mb-4 md:mb-6">
+      2. Zpracovávané údaje (osobní údaje a data)
+    </h2>
+
+    <div
+      class="bg-white p-5 md:p-8 rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] mb-4 md:mb-6"
+    >
+      <p class="text-sm md:text-base mb-4">
+        Správce je oprávněn zpracovávat následující typy osobních údajů
+        (náležející zejména do kategorie identifikačních, adresních, kontaktních
+        údajů):
+      </p>
+
+      <ul class="list-disc pl-4 md:pl-6 mb-4 md:mb-6 text-sm md:text-base">
+        <li class="mb-1 md:mb-2">Jméno a příjmení</li>
+        <li class="mb-1 md:mb-2">Adresa</li>
+        <li class="mb-1 md:mb-2">Název společnosti</li>
+        <li class="mb-1 md:mb-2">IČO</li>
+        <li class="mb-1 md:mb-2">E-mail</li>
+        <li class="mb-1 md:mb-2">Telefonní číslo</li>
+        <li class="mb-1 md:mb-2">IP adresa</li>
+        <li class="mb-1 md:mb-2">Soubory cookies</li>
+      </ul>
+
+      <p class="text-sm md:text-base mb-4">
+        Kategorie subjektů údajů, jejichž osobní údaje správce zpracovává při
+        návštěvě webových stránek správce:
+      </p>
+
+      <ul class="list-disc pl-4 md:pl-6 mb-4 md:mb-6 text-sm md:text-base">
+        <li class="mb-1 md:mb-2">Návštěvníci webových stránek www.bitez.cz</li>
+        <li class="mb-1 md:mb-2">
+          Zájemci o služby správce, tj. Bitez Technology s.r.o.
+        </li>
+        <li class="mb-1 md:mb-2">Zájemci o zasílání newsletteru s novinkami</li>
+        <li class="mb-1 md:mb-2">
+          Stávající klienti správce, tj. Bitez Technology s.r.o.
+        </li>
+        <li class="mb-1 md:mb-2">
+          Zájemci o stáž, praxi, zaměstnání v Bitez Technology s.r.o.
+        </li>
+      </ul>
+
+      <p class="text-sm md:text-base mb-4">
+        Jednotlivé účely zpracování osobních údajů včetně uvedení doby
+        zpracování:
+      </p>
+
+      <ul class="list-disc pl-4 md:pl-6 text-sm md:text-base">
+        <li class="mb-3 md:mb-4">
+          <strong
+            >vypracování nabídky služeb, uzavření či plnění smluvních
+            závazků</strong
+          >
+          <ul class="list-disc pl-4 md:pl-6 mt-1 md:mt-2">
+            <li>
+              osobní údaje jsou získány prostřednictvím kontaktního formuláře
+              umístěného na webových stránkách www.bitez.cz nebo přímo, pokud
+              nás kontaktujete emailem
+            </li>
+            <li>osobní údaje jsou zpracovávány po dobu 6 měsíců</li>
+            <li>
+              osobní údaje jsou zpracovány na základě oprávněného zájmu správce
+              dle čl. 6, odst. 1, písm. f) nařízení GDPR
+            </li>
+          </ul>
+        </li>
+        <li class="mb-3 md:mb-4">
+          <strong>splnění smlouvy</strong>
+          <ul class="list-disc pl-4 md:pl-6 mt-1 md:mt-2">
+            <li>
+              osobní údaje jsou zpracovávány po dobu platnosti a účinnosti
+              smlouvy nebo nejdéle po dobu 3 let od ukončení smluvních vztahů
+            </li>
+            <li>
+              osobní údaje jsou zpracovávány na základě čl. 6, odst. 1, písm. b)
+              nařízení GDPR
+            </li>
+          </ul>
+        </li>
+        <li class="mb-3 md:mb-4">
+          <strong
+            >zasílání obchodních sdělení, nabídek služeb a newsletterů
+            stávajícím klientům správce</strong
+          >
+          <ul class="list-disc pl-4 md:pl-6 mt-1 md:mt-2">
+            <li>
+              zasílání prostřednictvím elektronické pošty (e-mailem),
+              prostřednictvím telefonního hovoru nebo krátkých textových zpráv
+            </li>
+            <li>
+              osobní údaje jsou zpracovány po dobu 2 let od posledního
+              poskytnutí služby
+            </li>
+            <li>
+              osobní údaje jsou zpracovány na základě oprávněného zájmu správce
+              dle čl. 6, odst. 1, písm. f) nařízení GDPR
+            </li>
+          </ul>
+        </li>
+        <li class="mb-3 md:mb-4">
+          <strong
+            >zasílání obchodních sdělení, nabídek služeb a newsletterů ostatním
+            subjektům</strong
+          >
+          <ul class="list-disc pl-4 md:pl-6 mt-1 md:mt-2">
+            <li>
+              zasílání prostřednictvím elektronické pošty (e-mailem),
+              prostřednictvím telefonního hovoru nebo krátkých textových zpráv
+            </li>
+            <li>
+              osobní údaje jsou zpracovány po dobu 3 let od posledního
+              uskutečněného přihlášení k odběru newsletteru, pokud se z odběru
+              neodhlásíte
+            </li>
+            <li>
+              osobní údaje jsou zpracovány na základě souhlasu subjektu údajů
+              dle čl. 6, odst. 1, písm. a) nařízení GDPR
+            </li>
+          </ul>
+        </li>
+        <li class="mb-3 md:mb-4">
+          <strong>vedení účetnictví</strong>
+          <ul class="list-disc pl-4 md:pl-6 mt-1 md:mt-2">
+            <li>fakturační údaje a bankovní spojení</li>
+            <li>osobní údaje jsou zpracovány po dobu 10 let</li>
+            <li>
+              osobní údaje jsou zpracovány na základě oprávněného zájmu správce
+              dle čl. 6, odst. 1, písm. b) nařízení GDPR pro plnění zákonné
+              povinnosti a plnění smlouvy
+            </li>
+          </ul>
+        </li>
+        <li class="mb-3 md:mb-4">
+          <strong>soubory cookies</strong>
+          <ul class="list-disc pl-4 md:pl-6 mt-1 md:mt-2">
+            <li>
+              soubory cookies jsou krátké textové soubory, které internetová
+              stránka odešle do vašeho prohlížeče. Umožňují internetové stránce
+              zaznamenat informace o vaší návštěvě, například zvolený jazyk a
+              podobně, následující návštěva stránek tak pro vás může být snazší
+              a příjemnější. Soubory cookies umožňují lepší využití naší
+              internetové stránky a přizpůsobení jejího obsahu vašim potřebám.
+              Soubory cookies jsou užitečné, protože zvyšují uživatelskou
+              přívětivost opakovaně navštívené internetové stránky.
+            </li>
+            <li>
+              pouze nezbytně nutné (technické) cookies pro provoz webových
+              stránek je možné ukládat do vašeho prohlížeče bez vašeho souhlasu
+            </li>
+            <li>
+              v rámci cookies je uplatňován princip opt-in, který se netýká
+              technických cookies, které jsou nezbytné pro provoz webových
+              stránek. Princip opt-in znamená, že cookies lze aktivovat až po
+              uděleném souhlasu (aktivní úkon) uživatele. Před udělením souhlasu
+              není možné cookies použít.
+            </li>
+            <li>
+              osobní údaje jsou zpracovány po dobu trvání souhlasu, doba uložení
+              cookies se může lišit v závislosti na druhu cookies viz online
+              nástroj pro řešení souborů cookies (tzv. cookies lišta na webu)
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="mb-8 md:mb-10">
+    <h2 class="text-2xl text-center md:text-3xl text-primary mb-4 md:mb-6">
+      3. Zpracovatelé a zpracování osobních údajů
+    </h2>
+
+    <div
+      class="bg-white p-5 md:p-8 rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] mb-4 md:mb-6"
+    >
+      <p class="text-sm md:text-base mb-4">
+        Správce osobních údajů je také primárním zpracovatelem osobních údajů,
+        přičemž využívá také služeb zpracovatelů, kterými jsou:
+      </p>
+
+      <ul class="list-disc pl-4 md:pl-6 mb-4 md:mb-6 text-sm md:text-base">
+        <li class="mb-1 md:mb-2">
+          poskytovatel cloudových služeb – Google Cloud Platforms a
+          ZoomSphere.com (digital marketing cloud)
+        </li>
+        <li class="mb-1 md:mb-2">
+          poskytovatel webového rozhraní – webhosting Savana.cz
+        </li>
+        <li class="mb-1 md:mb-2">poskytovatel marketingového softwaru</li>
+        <li class="mb-1 md:mb-2">poskytovatel služby – viz bod 3.1</li>
+        <li class="mb-1 md:mb-2">poskytovatel aplikace – viz bod 3.1</li>
+        <li class="mb-1 md:mb-2">online nástroj při řešení souborů cookies</li>
+      </ul>
+
+      <p class="text-sm md:text-base mb-4">
+        Správce dále využívá následující aplikace a systémy těchto subjektů +
+        jejich podmínky ochrany soukromí dostupných na příslušném odkazu:
+      </p>
+
+      <ul class="list-disc pl-4 md:pl-6 mb-4 md:mb-6 text-sm md:text-base">
+        <li class="mb-3 md:mb-4">
+          <strong>Google:</strong> Google Ireland Limited (registrační číslo:
+          368047), se sídlem Gordon House, Barrow Street, Dublin 4, Irsko<br />
+          <a
+            href="https://policies.google.com/privacy?hl=cs"
+            class="text-primary hover:text-secondary break-words"
+            >https://policies.google.com/privacy?hl=cs</a
+          >
+        </li>
+        <li class="mb-3 md:mb-4">
+          <strong>Facebook:</strong> Facebook Ireland Limited (registrační číslo
+          462932), se sídlem 4 Grand Canal Square, Grand Canal Harbour, Dublin
+          2, D02 X525, Irsko<br />
+          <a
+            href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0"
+            class="text-primary hover:text-secondary break-words"
+            >https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0</a
+          >
+        </li>
+        <li class="mb-3 md:mb-4">
+          <strong>Instagram:</strong> provozovaný společností Facebook Ireland
+          Litd. (registrační číslo 462932), 4 Grand Canal Harbour, Dublin 2, D02
+          X525, Irsko<br />
+          <a
+            href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect"
+            class="text-primary hover:text-secondary break-words"
+            >https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect</a
+          >
+        </li>
+        <li class="mb-3 md:mb-4">
+          <strong>LinkedIn:</strong> Sunnyvale, 940 85 USA<br />
+          <a
+            href="https://cz.linkedin.com/legal/privacy-policy?trk=uno-reg-guest-home-privacy-policy"
+            class="text-primary hover:text-secondary break-words"
+            >https://cz.linkedin.com/legal/privacy-policy?trk=uno-reg-guest-home-privacy-policy</a
+          >
+        </li>
+        <li class="mb-3 md:mb-4">
+          <strong>YouTube:</strong> Google Ireland Limited (registrační číslo:
+          368047), se sídlem Gordon House, Barrow Street, Dublin 4, Irsko
+          (Google provozuje tuto stránku)<br />
+          <a
+            href="https://support.google.com/youtube/answer/10364219?hl=cs"
+            class="text-primary hover:text-secondary break-words"
+            >https://support.google.com/youtube/answer/10364219?hl=cs</a
+          >
+        </li>
+        <li class="mb-3 md:mb-4">
+          <strong>Twitter:</strong> 1355 Market Street, San Francisco, CA
+          94103<br />
+          <a
+            href="https://twitter.com/en/privacy"
+            class="text-primary hover:text-secondary break-words"
+            >https://twitter.com/en/privacy</a
+          >
+        </li>
+        <li class="mb-3 md:mb-4">
+          <strong>Ecomail.cz:</strong> Na Zderaze 15, 120 00 Praha 2, IČO:
+          02762943<br />
+          <a
+            href="https://www.ecomail.cz/zasady-zpracovani-osobnich-udaju"
+            class="text-primary hover:text-secondary break-words"
+            >https://www.ecomail.cz/zasady-zpracovani-osobnich-udaju</a
+          >
+        </li>
+        <li class="mb-3 md:mb-4">
+          <strong>Seznam.cz:</strong> Seznam.cz, a.s, Radlická 3294/10, 150 00
+          Praha 5, IČO: 26168685<br />
+          <a
+            href="https://o.seznam.cz/ochrana-udaju/"
+            class="text-primary hover:text-secondary break-words"
+            >https://o.seznam.cz/ochrana-udaju/</a
+          >
+        </li>
+        <li class="mb-3 md:mb-4">
+          <strong>Leady.cz:</strong> Imper CZ s.r.o., Nádražní 762/32, 150 00
+          Praha 5, IČO: 28547888<br />
+          <a
+            href="https://leady.cz/leady-gdpr/"
+            class="text-primary hover:text-secondary break-words"
+            >https://leady.cz/leady-gdpr/</a
+          >
+        </li>
+        <li class="mb-3 md:mb-4">
+          <strong>Hotjar.com:</strong> Hotjar Ltd., Dragonara Business Centre,
+          5th Floor, Dragonara Road, Paceville St Julian's STJ 3141, Malta<br />
+          <a
+            href="https://www.hotjar.com/legal/policies/privacy/"
+            class="text-primary hover:text-secondary break-words"
+            >https://www.hotjar.com/legal/policies/privacy/</a
+          >
+        </li>
+        <li class="mb-3 md:mb-4">
+          <strong>Cookiebot:</strong> Usercentrics A/S (registrační číslo
+          DK34624607), Havnegade 39, 1058 Copenhagen, Denmark<br />
+          <a
+            href="https://www.cookiebot.com/en/privacy-policy/"
+            class="text-primary hover:text-secondary break-words"
+            >https://www.cookiebot.com/en/privacy-policy/</a
+          >
+        </li>
+      </ul>
+
+      <h3 class="text-xl md:text-2xl mb-3 md:mb-4">
+        Zpracování osobních údajů
+      </h3>
+
+      <p class="text-sm md:text-base mb-4">
+        Osobní údaje jsou zpracovány po dobu trvání souhlasu, doba uložení
+        cookies se může lišit v závislosti na druhu cookies viz online nástroj
+        pro řešení souborů cookies (tzv. cookies lišta na webu).
+      </p>
+    </div>
+  </section>
+</main>
+
+
+    <footer class="bg-tertiary -mt-[72px] px-8 py-10 flex flex-col gap-10 md:pt-16">
+  <div class="flex flex-col md:flex-row md:justify-between gap-10">
+    <div class="flex flex-col gap-2">
+      <img
+        src="./assets/logo/bitez_logo_bila.svg"
+        alt="Bitez"
+        class="h-auto w-[120px]"
+      />
+      <p class="text-light-gray text-base">Bitez Technology s.r.o.</p>
+    </div>
+
+    <ul class="flex flex-col gap-2">
+      <li>
+        <a
+          href="/"
+          class="text-2xl text-light-gray hover:text-white transition-colors font-champ underline"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/how-does-it-work"
+          class="text-2xl text-light-gray hover:text-white transition-colors font-champ underline"
+        >
+          Jak to funguje
+        </a>
+      </li>
+      <li>
+        <a
+          href="/pricing"
+          class="text-2xl text-light-gray hover:text-white transition-colors font-champ underline"
+        >
+          Ceny
+        </a>
+      </li>
+      <li>
+        <a
+          href="/contact"
+          class="text-2xl text-light-gray hover:text-white transition-colors font-champ underline"
+        >
+          Kontakt
+        </a>
+      </li>
+      <li>
+        <a
+          href="/faq"
+          class="text-2xl text-light-gray hover:text-white transition-colors font-champ underline"
+        >
+          Časté dotazy
+        </a>
+      </li>
+    </ul>
+
+    
+
+    <div>
+      <p class="text-2xl text-white font-champ underline mb-4">Kontakt</p>
+      <ul>
+        <li>
+          <a
+            href="tel:+420 726 772 820"
+            class="text-white text-2xl font-champ hover:underline"
+          >
+            +420 726 772 820
+          </a>
+        </li>
+        <li>
+          <a
+            href="mailto:ahoj@bitez.cz"
+            class="text-white text-2xl font-champ hover:underline"
+          >
+            ahoj@bitez.cz
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="md:mr-20">
+      <p class="text-2xl text-white font-champ underline mb-4">Sledujte nás</p>
+      <ul class="flex gap-4 w-full">
+        <li>
+          <a
+            href="https://www.instagram.com/bitez.cz/"
+            target="_blank"
+            class="p-6 block bg-primary rounded-xl hover:bg-secondary transition-colors"
+          >
+            <i data-lucide="instagram" class="text-white w-8 h-8"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            target="_blank"
+            class="p-6 block bg-primary rounded-xl hover:bg-secondary transition-colors"
+          >
+            <i data-lucide="facebook" class="text-white w-8 h-8"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <ul>
+    <li>
+      <a href="#" class="text-light-gray text-base">Podmínky používání</a>
+    </li>
+    <li>
+      <a href="/gdpr" class="text-light-gray text-base"
+        >Ochrana osobních údajů</a
+      >
+    </li>
+  </ul>
+</footer>
+
+    <script src="./js/global.js"></script>
+    <script src="./js/icons.js" type="module"></script>
+  </body>
+</html>
