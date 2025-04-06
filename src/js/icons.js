@@ -17,11 +17,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   icons.forEach((icon) => {
     const name = icon.getAttribute("data-lucide")
+    const isFaq = icon.getAttribute("data-faq-icon")
     const svg = getIcon(name)
 
     if (svg) {
       const classes = icon.getAttribute("class")
-      icon.outerHTML = svg.replace("<svg", `<svg class="${classes}"`)
+      icon.outerHTML = svg.replace(
+        "<svg",
+        `<svg class="${classes}" ${
+          typeof isFaq === "string" ? "data-faq-icon" : ""
+        }`
+      )
     }
   })
 })
