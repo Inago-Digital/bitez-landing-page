@@ -69,6 +69,68 @@
       rel="stylesheet"
     />
 
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16978478241"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+      gtag("config", "AW-16978478241")
+    </script>
+
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments)
+        }
+        if (!f._fbq) f._fbq = n
+        n.push = n
+        n.loaded = !0
+        n.version = "2.0"
+        n.queue = []
+        t = b.createElement(e)
+        t.async = !0
+        t.src = v
+        s = b.getElementsByTagName(e)[0]
+        s.parentNode.insertBefore(t, s)
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      )
+      fbq("init", "1003425341419723")
+      fbq("track", "PageView")
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1003425341419723&ev=PageView&noscript=1"
+    /></noscript>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TLX8422CQ8"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+      gtag("config", "G-TLX8422CQ8")
+    </script>
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body
@@ -845,7 +907,7 @@
       <ul>
         <li>
           <a
-            href="tel:+420 726 772 820"
+            href="tel:+420726772820"
             class="text-white text-2xl font-champ hover:underline"
           >
             +420 726 772 820
@@ -889,5 +951,8 @@
 
     <script src="./js/global.js"></script>
     <script src="./js/icons.js" type="module"></script>
+    <script src="./js/google-tracking.js"></script>
+    <script src="./js/facebook-tracking.js"></script>
+    <script src="./js/facebook-conversion-api.js"></script>
   </body>
 </html>
