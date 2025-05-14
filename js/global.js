@@ -120,37 +120,60 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Email template generator not loaded")
       }
 
-      try {
-        const response = await fetch("https://email.hangerthem.com/send", {
-          method: "POST",
-          body: JSON.stringify({
-            to: "adam@bitez.cz",
-            name: data.name,
-            email: data.email,
-            message:
-              htmlTemplate ||
-              `
-Name: ${data.name}
-Email: ${data.email}
-Phone: ${data.phone}
-`,
-            subject: "Nová zpráva z Bitez",
-            html: htmlTemplate || undefined,
-          }),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        })
+//       try {
+//         const response = await fetch("https://email.hangerthem.com/send", {
+//           method: "POST",
+//           body: JSON.stringify({
+//             to: "adam@bitez.cz",
+//             name: data.name,
+//             email: data.email,
+//             message:
+//               htmlTemplate ||
+//               `
+// Name: ${data.name}
+// Email: ${data.email}
+// Phone: ${data.phone}
+// `,
+//             subject: "Nová zpráva z Bitez",
+//             html: htmlTemplate || undefined,
+//           }),
+//           headers: {
+//             "Content-Type": "application/json",
+//           },
+//         })
 
-        if (response.ok) {
-          alert("Message sent successfully.")
-          contactForm.reset()
-        } else {
-          alert("An error occurred. Please try again.")
+//         if (response.ok) {
+//           alert("Message sent successfully.")
+//           contactForm.reset()
+//         } else {
+//           alert("An error occurred. Please try again.")
+//         }
+//       } catch (error) {
+//         alert("An error occurred. Please try again.")
+//       }
+
+      try {
+        if (typeof generateContactEmailTemplate === "function") {
+          htmlTemplate = generateContactEmailTemplate(data)
         }
-      } catch (error) {
-        alert("An error occurred. Please try again.")
+      } catch (e) {
+        console.log("Contact email template generator not loaded")
       }
+
+      await fetch("https://email.hangerthem.com/send", {
+        method: "POST",
+        body: JSON.stringify({
+          to: data.email,
+          name: data.name,
+          email: data.email,
+          message: htmlTemplate,
+          subject: "Bitez - kontakt",
+          html: htmlTemplate || undefined,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
 
       contactFormSubmit.textContent = "Kontaktujte mě"
       contactFormSubmit.disabled = false
