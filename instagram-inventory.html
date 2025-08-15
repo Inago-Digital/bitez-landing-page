@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="cs" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -138,9 +138,9 @@
   >
     <nav
   data-navigation
-  class="bg-white shadow-xl flex items-center justify-between p-4 px-6 md:p-2 rounded-full fixed top-2 md:top-5 left-2 md:left-5 z-[100] w-[calc(100%-1rem)] md:w-[calc(100%-2.5rem)]"
+  class="bg-white shadow-xl flex items-center justify-between p-4 px-6 lg:p-2 rounded-full fixed top-2 lg:top-5 left-2 lg:left-5 z-[100] w-[calc(100%-1rem)] lg:w-[calc(100%-2.5rem)]"
 >
-  <a href="/" class="md:ml-8">
+  <a href="/" class="lg:ml-8">
     <img
       src="./assets/logo/bitez_logo_cervena.svg"
       alt="Bitez"
@@ -148,7 +148,7 @@
     />
   </a>
 
-  <ul class="hidden md:flex items-center gap-8 text-xl font-champ">
+  <ul class="hidden lg:flex items-center gap-8 text-xl font-champ">
     <li>
       <a
         href="/"
@@ -188,7 +188,7 @@
 
   <a
     href="/contact"
-    class="hidden md:flex bg-accent border border-accent text-white p-2 rounded-full items-center w-[216px] transition-colors hover:bg-accent-dark hover:border-accent-dark"
+    class="hidden lg:flex bg-accent border border-accent text-white p-2 rounded-full items-center w-[216px] transition-colors hover:bg-accent-dark hover:border-accent-dark"
   >
     <div
       class="bg-white rounded-full w-12 h-12 flex items-center justify-center"
@@ -200,7 +200,7 @@
 
   <div
     data-mobile-menu-toggle
-    class="flex flex-col gap-1.5 cursor-pointer md:hidden"
+    class="flex flex-col gap-1.5 cursor-pointer lg:hidden"
   >
     <div class="h-1 w-8 bg-primary rounded-full transition-all"></div>
     <div class="h-1 w-8 bg-primary rounded-full transition-all"></div>
@@ -267,18 +267,16 @@
 
     
 <header
-  class="bg-primary pt-[120px] pb-[76px] px-5 gap-10 flex flex-col items-center md:p-12 md:h-screen md:pt-[176px] md:justify-center min-h-screen"
+  class="bg-primary pt-[120px] pb-[76px] px-5 gap-10 flex flex-col items-center md:p-12 lg:min-h-screen md:pt-[176px] md:justify-center min-h-screen"
 >
   <h2 class="text-3xl text-accent md:text-[40px] md:leading-[46px] text-center">
-    Inventura
-    <br class="md:hidden" />
-    sociálních sítí
+    Insta-inventura
   </h2>
   <div class="flex flex-col gap-8 md:gap-10 items-center">
     <h1 class="text-[54px] leading-[62px] text-white text-center md:text-9xl">
-      Získejte více zákazníků
+      Analýza vašeho
       <br class="hidden md:block" />
-      z Instagramu
+      Instagramu zdarma
     </h1>
     <p
       class="text-xl text-white text-center md:leading-[26px] md:text-[22px] max-w-[1024px]"
@@ -291,8 +289,8 @@
   </div>
 
   <a
-    href="/contact"
-    class="relative bg-light-green h-[76px] border border-light-green text-white p-2 rounded-full flex items-center justify-center w-[336px] gap-5 transition-colors group hover:bg-dark-green hover:border-dark-green"
+    href="#form"
+    class="relative bg-light-green h-[76px] border border-light-green text-white p-2 rounded-full flex items-center justify-center w-[366px] gap-5 transition-colors group hover:bg-dark-green hover:border-dark-green"
   >
     <div
       class="bg-white rounded-full w-[60px] h-[60px] flex items-center justify-center absolute left-2"
@@ -302,13 +300,13 @@
         class="text-light-green w-9 h-9 group-hover:text-dark-green transition-colors"
       ></i>
     </div>
-    <p class="text-xl font-bold text-white">Chci začít</p>
+    <p class="text-xl font-bold text-white">Chci insta-inventuru</p>
   </a>
 </header>
 
 <section class="px-5 flex flex-col items-center gap-10">
   <h2 class="text-center text-[54px] leading-[54px] md:text-7xl -mt-2">
-    Pro koho je inventura?
+    Pro koho je <span class="text-primary">insta-inventura</span>
   </h2>
   <p
     class="text-center text-xl px-2 md:leading-[34px] md:text-[22px] max-w-[800px]"
@@ -318,25 +316,39 @@
     útraty.
   </p>
 
-  <div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8 max-w-[1256px]">
-    <div class="flex bg-white p-8 rounded-xl">
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-[1256px]"
+  >
+    <div class="flex bg-white p-8 rounded-xl items-center">
       <h2 class="w-2/3 text-3xl">Majitelé restaurací</h2>
-      <span class="w-1/3">
-        <i data-lucide="chef-hat" class="ml-auto w-20 h-20 text-primary"></i>
+      <span class="w-1/2 flex items-center justify-end">
+        <img
+          src="./assets/graphic/instagram-inventroy/restaurants.svg"
+          alt="Ikona restaurace pro inventuru Instagramu"
+          class="w-20 h-20"
+        />
       </span>
     </div>
 
-    <div class="flex bg-white p-8 rounded-xl">
+    <div class="flex bg-white p-8 rounded-xl items-center">
       <h2 class="w-2/3 text-3xl">Majitelé kaváren</h2>
-      <span class="w-1/3">
-        <i data-lucide="coffee" class="ml-auto w-20 h-20 text-primary"></i>
+      <span class="w-1/2 flex items-center justify-end">
+        <img
+          src="./assets/graphic/instagram-inventroy/cafes.svg"
+          alt="Ikona kavárny pro inventuru Instagramu"
+          class="w-20 h-20"
+        />
       </span>
     </div>
 
-    <div class="flex bg-white p-8 rounded-xl">
+    <div class="flex bg-white p-8 rounded-xl items-center">
       <h2 class="w-2/3 text-3xl">Majitelé barů</h2>
-      <span class="w-1/3">
-        <i data-lucide="martini" class="ml-auto w-20 h-20 text-primary"></i>
+      <span class="w-1/2 flex items-center justify-end">
+        <img
+          src="./assets/graphic/instagram-inventroy/bars.svg"
+          alt="Ikona baru pro inventuru Instagramu"
+          class="w-20 h-20"
+        />
       </span>
     </div>
   </div>
@@ -346,7 +358,7 @@
   <h3
     class="text-center text-primary leading-[30px] text-[28px] mb-4 md:mb-10 md:text-[40px] md:leading-[46px]"
   >
-    Využívejte sociální sítě naplno
+    Zvyšte návštěvnost vašeho profilu
   </h3>
   <h2 class="text-center leading-[46px] text-[44px] mb-8 md:mb-12 md:text-7xl">
     Získejte <span class="text-primary">zdarma</span> tipy
@@ -362,123 +374,606 @@
     <strong>horu rad a typů</strong>.
   </p>
 
-  <a
-    href="#"
-    class="mb-10 w-full font-champ text-white text-4xl uppercase bg-primary p-5 rounded-xl block text-center mt-10 hover:bg-secondary transition-colors md:p-7"
+  <div
+    class="mb-10 w-full font-champ text-white text-4xl uppercase bg-primary p-5 rounded-xl flex justify-between items-center"
   >
-    Jak vyplnit profil?
-  </a>
-
-  <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 w-full">
-    <div
-      class="flex flex-col border-gray border-[3px] bg-white px-4 py-12 rounded-xl gap-4 items-center w-full"
+    <button
+      id="prev"
+      class="bg-accent rounded-full p-4 hover:bg-accent-dark transition-colors"
     >
-      <h3 class="text-center leading-[46px] text-[40px] text-gray">
-        Špatné řesení
-      </h3>
-      <p class="text-center text-base max-w-[400px]">
-        Průměrná cena <strong>s měsíční platbou a smlouvou</strong>.
-      </p>
-      <div class="w-full px-2 md:px-12 relative">
-        <div class="flex w-full justify-center relative md:justify-start">
-          <img
-            src="./assets/images/phones_03.png"
-            alt="Ukázka aplikace Bitez na mobilních telefonech"
-            class="relative"
-          />
-        </div>
+      <i data-lucide="arrow-left" class="w-6 h-6 stroke-[5px]"></i>
+    </button>
 
-        <div
-          class="flex flex-col gap-4 -mt-20 w-full px-2 w-fit relative z-10 md:absolute md:flex-row md:top-[50%] md:left-[40%]"
-        >
-          <ul
-            class="flex flex-col bg-white px-6 py-8 gap-6 rounded-xl md:w-[360px] shadow-lg h-fit"
-          >
-            <li class="flex items-center gap-4 text-lg w-full font-bold z-10">
-              <i
-                data-lucide="x"
-                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
-              ></i>
-              Publikační plány
-            </li>
-            <li class="flex items-center gap-4 text-lg w-full font-bold z-10">
-              <i
-                data-lucide="x"
-                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
-              ></i>
-              Chat se správcem
-            </li>
-            <li class="flex items-center gap-4 text-lg w-full font-bold z-10">
-              <i
-                data-lucide="x"
-                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
-              ></i>
-              Uložiště fotografií
-            </li>
-          </ul>
-        </div>
-      </div>
-      <p class="text-center text-blue-gray text-base max-w-[400px] mt-auto">
-        Cena odpovídá průměrnému agenturnímu fee s počtem 20 hodin měsíčně.
-      </p>
-    </div>
-
-    <div
-      class="flex flex-col border-light-green border-[3px] bg-white px-4 py-12 rounded-xl gap-4 items-center w-full"
+    
+    <span
+      class="item-title text-center "
+      >Jak vyplnit profil?</span
     >
-      <h3 class="text-center leading-[46px] text-[40px] text-light-green">
-        Správné řešení
-      </h3>
-      <p class="text-center text-base max-w-[400px]">
-        Pevná měsíční <strong>cena vždy bez závazků</strong>.
-      </p>
-      <div class="w-full px-2 md:px-12 relative">
-        <div class="flex w-full justify-center relative md:justify-start">
-          <img
-            src="./assets/images/phones_03.png"
-            alt="Ukázka aplikace Bitez na mobilních telefonech"
-            class="relative"
-          />
-        </div>
+    
+    <span
+      class="item-title text-center hidden"
+      >Jak na správné formáty?</span
+    >
+    
+    <span
+      class="item-title text-center hidden"
+      >Jak na ideální texty?</span
+    >
+    
+    <span
+      class="item-title text-center hidden"
+      >Jak na správnou grafiku?</span
+    >
+    
 
-        <div
-          class="flex flex-col gap-4 -mt-20 w-full px-2 w-fit relative z-10 md:absolute md:flex-row md:top-[50%] md:left-[40%]"
-        >
-          <ul
-            class="flex flex-col bg-white px-6 py-8 gap-6 rounded-xl md:w-[360px] shadow-lg h-fit"
-          >
-            <li class="flex items-center gap-4 text-lg w-full font-bold z-10">
-              <i
-                data-lucide="check"
-                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
-              ></i>
-              Publikační plány
-            </li>
-            <li class="flex items-center gap-4 text-lg w-full font-bold z-10">
-              <i
-                data-lucide="check"
-                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
-              ></i>
-              Chat se správcem
-            </li>
-            <li class="flex items-center gap-4 text-lg w-full font-bold z-10">
-              <i
-                data-lucide="check"
-                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
-              ></i>
-              Uložiště fotografií
-            </li>
-          </ul>
-        </div>
-      </div>
-      <p class="text-center text-blue-gray text-base mt-auto">
-        Zobrazená cena platí pro
-        <span class="font-bold underline"
-          >nejoblíbenější balíček Degustační menu</span
-        >.
-      </p>
-    </div>
+    <button
+      id="next"
+      class="bg-accent rounded-full p-4 hover:bg-accent-dark transition-colors"
+    >
+      <i data-lucide="arrow-right" class="w-6 h-6 stroke-[5px]"></i>
+    </button>
   </div>
+
+  <div class="w-full" id="carousel-content">
+    
+    <div
+      class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 carousel-item w-full "
+    >
+      <div
+        class="flex flex-col border-gray border-[3px] bg-white px-4 py-12 rounded-xl gap-4 items-center w-full"
+      >
+        <h3 class="text-center leading-[46px] text-[40px] text-gray">
+          Špatné řešení
+        </h3>
+        <p class="text-center text-base max-w-[400px]">
+          Zaměnitelný profil bez informací.
+        </p>
+        <div
+          class="w-full px-2 md:px-12 flex-col lg:flex-row flex gap-5 justify-center items-center"
+        >
+          <img
+            src="./assets/images/how-to-fill-profile/bad-solution.png"
+            alt="Ukázka špatného řešení pro vyplnění profilu"
+            class="h-auto lg:w-2/5"
+          />
+          <ul
+            class="flex flex-col bg-white px-6 py-8 gap-6 rounded-xl shadow-lg h-fit w-full lg:w-3/5"
+          >
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Špatný popis
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Nevhodné profilové foto
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Nepropojené odkazy
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Bez adresy a kontaktů
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Chybí výběry
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div
+        class="flex flex-col border-light-green border-[3px] bg-white px-4 py-12 rounded-xl gap-4 items-center w-full"
+      >
+        <h3 class="text-center leading-[46px] text-[40px] text-light-green">
+          Správné řešení
+        </h3>
+        <p class="text-center text-base max-w-[400px]">
+          Návštěvník vás <b>snadno najde a pozná.</b>
+        </p>
+        <div
+          class="w-full px-2 md:px-12 flex-col lg:flex-row flex gap-5 justify-center items-center"
+        >
+          <img
+            src="./assets/images/how-to-fill-profile/good-solution.png"
+            alt="Ukázka správného řešení pro vyplnění profilu"
+            class="h-auto lg:w-2/5"
+          />
+          <ul
+            class="flex flex-col bg-white px-6 py-8 gap-6 rounded-xl shadow-lg h-fit w-full lg:w-3/5"
+          >
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Správné profilové foto
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Kategorie služeb
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Popis podniku
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              URL a odkazy
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Tlačítka a výběry
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div
+      class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 carousel-item w-full hidden"
+    >
+      <div
+        class="flex flex-col border-gray border-[3px] bg-white px-4 py-12 rounded-xl gap-4 items-center w-full"
+      >
+        <h3 class="text-center leading-[46px] text-[40px] text-gray">
+          Špatné řešení
+        </h3>
+        <p class="text-center text-base max-w-[400px]">
+          Špatné formáty s minimálním dosahem.
+        </p>
+        <div
+          class="w-full px-2 md:px-12 flex-col lg:flex-row flex gap-5 justify-center items-center"
+        >
+          <img
+            src="./assets/images/good-formats/bad-solution.png"
+            alt="Ukázka špatného formátu příspěvků"
+            class="h-auto lg:w-2/5"
+          />
+          <ul
+            class="flex flex-col bg-white px-6 py-8 gap-6 rounded-xl shadow-lg h-fit w-full lg:w-3/5"
+          >
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Špatné formáty
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Chybí videa
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Nepravidelná publikace
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Nekvalitní fotografie
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Žádná stories
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div
+        class="flex flex-col border-light-green border-[3px] bg-white px-4 py-12 rounded-xl gap-4 items-center w-full"
+      >
+        <h3 class="text-center leading-[46px] text-[40px] text-light-green">
+          Správné řešení
+        </h3>
+        <p class="text-center text-base max-w-[400px]">
+          Formáty přinášejí <b>maximální dosah příspěvků</b>.
+        </p>
+        <div
+          class="w-full px-2 md:px-12 flex-col lg:flex-row flex gap-5 justify-center items-center"
+        >
+          <img
+            src="./assets/images/good-formats/good-solution.png"
+            alt="Ukázka správného formátu příspěvků"
+            class="h-auto lg:w-2/5"
+          />
+          <ul
+            class="flex flex-col bg-white px-6 py-8 gap-6 rounded-xl shadow-lg h-fit w-full lg:w-3/5"
+          >
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Pravidelnost publikace
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Správné formáty feed
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Uložiště fotografií
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Stories
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Kvalita obsahu
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div
+      class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 carousel-item w-full hidden"
+    >
+      <div
+        class="flex flex-col border-gray border-[3px] bg-white px-4 py-12 rounded-xl gap-4 items-center w-full"
+      >
+        <h3 class="text-center leading-[46px] text-[40px] text-gray">
+          Špatné řešení
+        </h3>
+        <p class="text-center text-base max-w-[400px]">
+          Texty, které nikoho nezaujmou.
+        </p>
+        <div
+          class="w-full px-2 md:px-12 flex-col lg:flex-row flex gap-5 justify-center items-center"
+        >
+          <img
+            src="./assets/images/ideal-texts/bad-solution.png"
+            alt="Ukázka špatného řešení pro texty"
+            class="h-auto lg:w-2/5"
+          />
+          <ul
+            class="flex flex-col bg-white px-6 py-8 gap-6 rounded-xl shadow-lg h-fit w-full lg:w-3/5"
+          >
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Nezajímavé sdělení
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Bez výzvy k akci
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Chyby ve stylistice
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Obecné hashtagy
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Špatný výběr fotky
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div
+        class="flex flex-col border-light-green border-[3px] bg-white px-4 py-12 rounded-xl gap-4 items-center w-full"
+      >
+        <h3 class="text-center leading-[46px] text-[40px] text-light-green">
+          Správné řešení
+        </h3>
+        <p class="text-center text-base max-w-[400px]">
+          Šťavnaté texty <b>s výzvou k akci.</b>
+        </p>
+        <div
+          class="w-full px-2 md:px-12 flex-col lg:flex-row flex gap-5 justify-center items-center"
+        >
+          <img
+            src="./assets/images/ideal-texts/good-solution.png"
+            alt="Ukázka správného řešení pro texty"
+            class="h-auto lg:w-2/5"
+          />
+          <ul
+            class="flex flex-col bg-white px-6 py-8 gap-6 rounded-xl shadow-lg h-fit w-full lg:w-3/5"
+          >
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Jasné sdělení
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Call to Action
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Tone of Voice značky
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Hashtagy a klíčová slova
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Vhodná míra emojis
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div
+      class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 carousel-item w-full hidden"
+    >
+      <div
+        class="flex flex-col border-gray border-[3px] bg-white px-4 py-12 rounded-xl gap-4 items-center w-full"
+      >
+        <h3 class="text-center leading-[46px] text-[40px] text-gray">
+          Špatné řešení
+        </h3>
+        <p class="text-center text-base max-w-[400px]">
+          Nepřehledná grafika bez identity.
+        </p>
+        <div
+          class="w-full px-2 md:px-12 flex-col lg:flex-row flex gap-5 justify-center items-center"
+        >
+          <img
+            src="./assets/images/good-graphic/bad-solution.png"
+            alt="Ukázka špatného řešení pro grafiku"
+            class="h-auto lg:w-2/5"
+          />
+          <ul
+            class="flex flex-col bg-white px-6 py-8 gap-6 rounded-xl shadow-lg h-fit w-full lg:w-3/5"
+          >
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Nepřehledná grafika
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Nevhodný formát
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Špatná čitelnost
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Chybí jednodná identita
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="minus"
+                class="w-6 h-6 p-1 bg-primary rounded-full text-white stroke-[5px]"
+              ></i>
+              Bez interaktivních prvků
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div
+        class="flex flex-col border-light-green border-[3px] bg-white px-4 py-12 rounded-xl gap-4 items-center w-full"
+      >
+        <h3 class="text-center leading-[46px] text-[40px] text-light-green">
+          Správné řešení
+        </h3>
+        <p class="text-center text-base max-w-[400px]">
+          Interaktivní vizuál <b>v jednotné identitě</b>.
+        </p>
+        <div
+          class="w-full px-2 md:px-12 flex-col lg:flex-row flex gap-5 justify-center items-center"
+        >
+          <img
+            src="./assets/images/good-graphic/good-solution.png"
+            alt="Ukázka správného řešení pro grafiku"
+            class="h-auto lg:w-2/5"
+          />
+          <ul
+            class="flex flex-col bg-white px-6 py-8 gap-6 rounded-xl shadow-lg h-fit w-full lg:w-3/5"
+          >
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Jednotná identita
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Přehlednost grafiky
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Informační grafiky
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Grafické stories
+            </li>
+            
+            <li class="flex items-center gap-2 text-lg w-full font-bold z-10">
+              <i
+                data-lucide="check"
+                class="w-6 h-6 p-1 bg-light-green rounded-full text-white stroke-[5px]"
+              ></i>
+              Interaktivní stories
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <script>
+    const items = document.querySelectorAll(".carousel-item")
+    const titles = document.querySelectorAll(".item-title")
+    let current = 0
+
+    function showItem(index) {
+      items.forEach((item, i) => {
+        item.classList.toggle("hidden", i !== index)
+      })
+      titles.forEach((title, i) => {
+        title.classList.toggle("hidden", i !== index)
+      })
+    }
+
+    document.getElementById("prev").addEventListener("click", () => {
+      current = (current - 1 + items.length) % items.length
+      showItem(current)
+    })
+
+    document.getElementById("next").addEventListener("click", () => {
+      current = (current + 1) % items.length
+      showItem(current)
+    })
+  </script>
 </section>
 
 <section class="px-5 flex flex-col items-center gap-10">
@@ -490,18 +985,9 @@
   >
     Stále váháte, jaký to pro vás bude mít užitek?
   </p>
-  <iframe
-    src="https://www.youtube.com/embed/xi2D5WX6AZo?si=izonyit6kyYuhBkz"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen
-    class="w-full h-auto aspect-video rounded-xl outline-none max-w-[800px]"
-  ></iframe>
   <a
-    href="/contact"
-    class="relative bg-light-green h-[76px] border border-light-green text-white p-2 rounded-full flex items-center justify-center w-[336px] gap-5 transition-colors group hover:bg-dark-green hover:border-dark-green"
+    href="#form"
+    class="relative bg-light-green h-[76px] border border-light-green text-white p-2 rounded-full flex items-center justify-center w-[366px] gap-5 transition-colors group hover:bg-dark-green hover:border-dark-green"
   >
     <div
       class="bg-white rounded-full w-[60px] h-[60px] flex items-center justify-center absolute left-2"
@@ -511,33 +997,33 @@
         class="text-light-green w-9 h-9 group-hover:text-dark-green transition-colors"
       ></i>
     </div>
-    <p class="text-xl font-bold text-white">Chci začít</p>
+    <p class="text-xl font-bold text-white">Chci insta-inventuru</p>
   </a>
 </section>
 
 <section
-  class="px-5 bg-accent py-[72px] overflow-hidden flex flex-col items-center md:flex-row md:px-40 md:py-[120px] md:items-start"
+  class="px-5 bg-accent py-[72px] overflow-hidden flex flex-col items-center lg:flex-row lg:px-40 lg:py-[120px] lg:items-start"
 >
-  <div class="w-full md:w-1/2">
+  <div class="w-full lg:w-1/2">
     <h2
-      class="text-center text-[54px] leading-[54px] mb-8 md:text-left md:text-7xl"
+      class="text-center text-[52px] leading-[54px] mb-8 lg:text-left lg:text-7xl"
     >
-      Neodolatelné
+      <span class="text-primary">Inventura</span>
       <br />
-      marketingové
+      a marketingové
       <br />
       recepty
     </h2>
     <p
-      class="text-center md:text-left text-xl mb-12 md:leading-[34px] md:text-[22px] max-w-[480px] md:mb-20"
+      class="text-center mx-auto lg:mx-0 lg:text-left text-xl mb-12 lg:leading-[34px] lg:text-[22px] max-w-[480px] lg:mb-20"
     >
       Náše specialistka projde váš profil a
       <strong>připraví kuchařku</strong> plnou marketingových receptů,
       <strong>kterým neodolá žádný zákazník</strong>.
     </p>
     <a
-      href="/contact"
-      class="md:w-80 hidden md:flex relative bg-tertiary h-[76px] border border-tertiary text-white p-2 rounded-full items-center justify-center w-11/12 gap-5 transition-colors group hover:bg-dark hover:border-dark"
+      href="#form"
+      class="lg:w-80 hidden lg:flex relative bg-tertiary h-[76px] border border-tertiary text-white p-2 rounded-full items-center justify-center w-11/12 gap-5 transition-colors group hover:bg-dark hover:border-dark"
     >
       <div
         class="bg-white rounded-full w-[60px] h-[60px] flex items-center justify-center absolute left-2"
@@ -547,31 +1033,24 @@
           class="text-tertiary w-9 h-9 group-hover:text-dark transition-colors"
         ></i>
       </div>
-      <p class="text-xl font-bold text-white">Chci začít</p>
+      <p class="text-xl font-bold text-white">To potřebuji</p>
     </a>
   </div>
   <img
     src="./assets/images/ratings.png"
     alt="Mobilní telefon zobrazující hodnocení a recenze v aplikaci Bitez"
-    class="w-auto mb-10 md:hidden"
+    class="w-auto mb-10 lg:hidden"
   />
-  <div class="hidden relative md:block md:w-1/2 -my-[72px]">
+  <div class="hidden relative lg:block lg:w-1/2 -my-[72px]">
     <img
       src="./assets/images/ratings.png"
       alt="Mobilní telefon zobrazující hodnocení a recenze v aplikaci Bitez"
       class="w-auto mx-auto"
     />
-    <div
-      class="rotate-[15deg] absolute bg-primary w-[210px] h-[210px] rounded-full flex items-center justify-center -bottom-16 left-0"
-    >
-      <h3 class="text-white text-6xl text-center">
-        Za <span class="text-accent">7</span> dní
-      </h3>
-    </div>
   </div>
   <a
-    href="/contact"
-    class="md:hidden relative bg-tertiary h-[76px] border border-tertiary text-white p-2 rounded-full flex items-center justify-center w-11/12 gap-5 transition-colors group hover:bg-dark hover:border-dark"
+    href="#form"
+    class="lg:hidden relative bg-tertiary h-[76px] border border-tertiary text-white p-2 rounded-full flex items-center justify-center w-11/12 gap-5 transition-colors group hover:bg-dark hover:border-dark"
   >
     <div
       class="bg-white rounded-full w-[60px] h-[60px] flex items-center justify-center absolute left-2"
@@ -589,7 +1068,7 @@
   class="px-5 py-[72px] bg-accent md:px-36 flex flex-col items-center -mt-[72px]"
 >
   <h2 class="text-center text-[54px] leading-[54px] mb-8 md:mb-12 md:text-7xl">
-    Jak to probíhá?
+    Jak to funguje?
   </h2>
   <p
     class="text-center text-xl mb-10 md:leading-[34px] md:text-[22px] max-w-[800px]"
@@ -599,7 +1078,7 @@
     vedou a <strong>jak mohou být lepší</strong>.
   </p>
 
-  <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     <div class="flex flex-col bg-white p-8 rounded-xl">
       <div class="flex items-center w-full">
         <h3 class="w-2/3 text-3xl mb-5">
@@ -609,8 +1088,12 @@
           <br />
           k inventuře
         </h3>
-        <span class="w-1/3">
-          <i data-lucide="handshake" class="ml-auto w-20 h-20 text-primary"></i>
+        <span class="w-1/3 flex items-center justify-end">
+          <img
+            src="./assets/graphic/instagram-inventroy/you.svg"
+            alt="Ikona hvězdy pro inventuru Instagramu"
+            class="w-20 h-20"
+          />
         </span>
       </div>
       <p class="text-base text-tertiary">
@@ -628,8 +1111,12 @@
           <br />
           hodnocení
         </h3>
-        <span class="w-1/3">
-          <i data-lucide="camera" class="ml-auto w-20 h-20 text-primary"></i>
+        <span class="w-1/3 flex items-center justify-end">
+          <img
+            src="./assets/graphic/instagram-inventroy/us.svg"
+            alt="Ikona palce pro inventuru Instagramu"
+            class="w-20 h-20"
+          />
         </span>
       </div>
       <p class="text-base text-tertiary">
@@ -648,11 +1135,12 @@
           <br />
           výsledky
         </h3>
-        <span class="w-1/3">
-          <i
-            data-lucide="monitor-smartphone"
-            class="ml-auto w-20 h-20 text-primary"
-          ></i>
+        <span class="w-1/3 flex items-center justify-end">
+          <img
+            src="./assets/graphic/instagram-inventroy/together.svg"
+            alt="Ikona prstů pro inventuru Instagramu"
+            class="w-20 h-20"
+          />
         </span>
       </div>
       <p class="text-base text-tertiary">
@@ -676,9 +1164,10 @@
 
 <section
   class="px-5 py-[72px] bg-primary -mb-[72px] md:px-36 flex flex-col items-center -mt-[72px]"
+  id="form"
 >
   <h2 class="text-center text-[54px] leading-[54px] mb-8 md:mb-12 md:text-7xl">
-    <span class="text-white"> Inventura Instagramu </span>
+    <span class="text-white"> Přihlaste se k inventuře </span>
     <br class="hidden md:block" />
     zdarma a bez závazků
   </h2>
@@ -757,12 +1246,12 @@
       </div>
       <button
         data-contact-form-submit
-        class="w-full bg-light-green text-white p-5 rounded-lg font-bold hover:bg-dark-green transition-colors col-span-2"
+        class="w-fit bg-light-green text-white py-5 px-16 mx-auto my-4 rounded-lg font-bold hover:bg-dark-green transition-colors col-span-2"
       >
-        Kontaktujte mě
+        Poslat na inventuru
       </button>
     </form>
-    <p class="text-center text-blue-gray text-base mt-4">
+    <p class="text-center text-base mt-4">
       Do 24 hodin se vám ozve náš zástupce, který s vámi potvrdí údaje a pustíme
       se do toho.
     </p>
@@ -785,7 +1274,7 @@
     data-faq-question
     class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase md:text-[28px] md:leading-[34px]"
   >
-    <span class="w-[90%] text-left">Jak nejrychleji můžeme začít?</span>
+    <span class="w-[90%] text-left">Co od nás budete potřebovat?</span>
     <span class="w-[10%]">
       <i
         data-faq-icon
@@ -799,7 +1288,7 @@
     class="px-6 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
   >
     <p class="pb-6 text-base md:text-lg md:leading-9">
-       V momentě kdy si plácnete s naším obchdoném zástupcem, dáme věci do pohybu. Proces odbavení trvá v běžných případech jeden týden, ve kterém nastavujeme sociální sítě, připravujeme grafiku a připravíme u vás fotky a videa. První příspěvky začneme publikovat na začátku druhého týdne spolupráce. Pokud však potřebujete komunikovat dříve, dokážeme připravit grafické stories a posty již třetí den.
+      Budeme od vás potřebovat pouze odkazy na vaše profily, u kterých máme provést inventuru. Inventura je provedena z pohledu zákazníka, proto od vás hesla ani jiné přístupové údaje od vašich profilů potřebovat nebudeme.
     </p>
   </div>
 </div>
@@ -811,7 +1300,7 @@
     data-faq-question
     class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase md:text-[28px] md:leading-[34px]"
   >
-    <span class="w-[90%] text-left">Jak začíná spolupráce?</span>
+    <span class="w-[90%] text-left">Co když chci inventuru, ale nejsem z gastra?</span>
     <span class="w-[10%]">
       <i
         data-faq-icon
@@ -825,7 +1314,7 @@
     class="px-6 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
   >
     <p class="pb-6 text-base md:text-lg md:leading-9">
-      Začátek spolupráce je velmi jednoduchý. Jako první se s naším obchodním zástupcem dohodnetene na vybraném balíčku. Poté od nás dostanete přístupy do aplikace, kde se vás ujme naše marketingová specialistka. S ní se od prvního dne pustíte do základního nastavení vašich sociálních sítí, vyžádá si od vás loga a další grafiku podle kterých připraví grafickou identitu a domluví s vámi termín focení. Do 48 hodin po návštěvě fotografa vám poté zašle první sadu příspěvků k publikaci.
+      V případě, že podnikáte v jiném oboru než gastro, prosím, kontaktujte našeho obchodního zástupce přes kontaktní stránku na webu. Zavolejte mu nebo napište a probereme spolu, jaké jsou možnosti. Gastro-inventura je produkt určený pro gastro podniky, můžeme vám však nabídnout také jiné možnosti, které budou odpovídat vašim požadavkům.
     </p>
   </div>
 </div>
@@ -837,7 +1326,7 @@
     data-faq-question
     class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase md:text-[28px] md:leading-[34px]"
   >
-    <span class="w-[90%] text-left">Jak probíhá focení?</span>
+    <span class="w-[90%] text-left">Je to opravdu zdarma a bez závazků?</span>
     <span class="w-[10%]">
       <i
         data-faq-icon
@@ -851,85 +1340,7 @@
     class="px-6 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
   >
     <p class="pb-6 text-base md:text-lg md:leading-9">
-      Podle frekvence, která je uvedena ve vašem plánu, za vámi po předchozí dohodě dorazí do vaší provozovny fotograf. Během hodiny až dvou u vás nafotí a natočí potřebné materiály, které budou sloužit k publikaci. Počet fotek není omezen a budou vám dány k dispozici i pro další účely. Od vás budeme potřebovat perfektně připravené vše, co se bude fotit a nedocházelo tak ke zbytečným časovým prodlevám.
-    </p>
-  </div>
-</div>
-  <div
-  data-faq-item
-  class="bg-muted rounded-xl overflow-hidden max-w-[1000px] md:px-6"
->
-  <button
-    data-faq-question
-    class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase md:text-[28px] md:leading-[34px]"
-  >
-    <span class="w-[90%] text-left">Jak proběhne předání přístupů na sociální sítě?</span>
-    <span class="w-[10%]">
-      <i
-        data-faq-icon
-        data-lucide="chevron-down"
-        class="w-6 md:w-10 h-6 md:h-10 transition-transform text-primary stroke-[3px] ml-auto"
-      ></i>
-    </span>
-  </button>
-  <div
-    data-faq-answer
-    class="px-6 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
-  >
-    <p class="pb-6 text-base md:text-lg md:leading-9">
-      Po zahájení spolupráce dostanete přidělenou svou vlastní projektovou asistentku. Společně s ní si poté pomocí projektové aplikace předáte veškeré přístupy, podklady a další materiály. V aplikace na vás bude čekat jednoduchý onboarding s akčními kroky, které je potřeba splnit a díky kterým nám předáte přístupy. Důležité je, abyste věděli, kdo vaše stránky založil nebo je případně spravuje, měli potřebná hesla a registrační e-maily. Pokud je nemáte nebo se do účtů nemůžete dostat, vaše asistentka s vámi naplánuje další individuální postup.
-    </p>
-  </div>
-</div>
-  <div
-  data-faq-item
-  class="bg-muted rounded-xl overflow-hidden max-w-[1000px] md:px-6"
->
-  <button
-    data-faq-question
-    class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase md:text-[28px] md:leading-[34px]"
-  >
-    <span class="w-[90%] text-left">Jak budeme komunikovat?</span>
-    <span class="w-[10%]">
-      <i
-        data-faq-icon
-        data-lucide="chevron-down"
-        class="w-6 md:w-10 h-6 md:h-10 transition-transform text-primary stroke-[3px] ml-auto"
-      ></i>
-    </span>
-  </button>
-  <div
-    data-faq-answer
-    class="px-6 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
-  >
-    <p class="pb-6 text-base md:text-lg md:leading-9">
-      Komunikovat budeme pomocí přehledné aplikace, kterou si můžete stáhnout do počítače, telefonu nebo ipadu. Všechny úkoly nám budete zadávat skrze ni. Umožní vám také komunikovat s vaší asistentkou, schvalovat výstupy nebo nahrávat data. Na začátku vám pošleme jednoduchý manuál k obsluze a nastavíme přístupy i pro více uživatelů.
-    </p>
-  </div>
-</div>
-  <div
-  data-faq-item
-  class="bg-muted rounded-xl overflow-hidden max-w-[1000px] md:px-6"
->
-  <button
-    data-faq-question
-    class="w-full font-champ p-6 text-lg font-bold flex justify-between items-center uppercase md:text-[28px] md:leading-[34px]"
-  >
-    <span class="w-[90%] text-left">Uvidíme vaše osobní zprávy na sociálních sítích?</span>
-    <span class="w-[10%]">
-      <i
-        data-faq-icon
-        data-lucide="chevron-down"
-        class="w-6 md:w-10 h-6 md:h-10 transition-transform text-primary stroke-[3px] ml-auto"
-      ></i>
-    </span>
-  </button>
-  <div
-    data-faq-answer
-    class="px-6 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
-  >
-    <p class="pb-6 text-base md:text-lg md:leading-9">
-      Neuvidíme. Máme přístup pouze do profilů vaší restaurace. Do vašeho osobního profilu nám přístup nedáváte a my se do něj nemůžeme nijak dostat. Vaše soukromé zprávy tak jsou v maximálním bezpečí.
+      Ano. Jak s gastro-inventurou naložíte, je pouze na vás. Nejste ničím limitovaní ani se nám nezavazujete k žádné další spolupráci.
     </p>
   </div>
 </div>
