@@ -78,5 +78,22 @@
         "answer": "Za každým příspěvkem, fotkou nebo videem stojí živý člověk. Ten se stará o vaše sociální sítě a je s vámi v kontaktu. Na vašich sociálních sítích se tedy vždy objeví reálné fotky a texty od marketingového specialisty."
       }
     ]
+  },
+  "inventory": {
+    "title": "Inventura",
+    "questions": [
+      {
+        "question": "Co od nás budete potřebovat?",
+        "answer": "Budeme od vás potřebovat pouze odkazy na vaše profily, u kterých máme provést inventuru. Inventura je provedena z pohledu zákazníka, proto od vás hesla ani jiné přístupové údaje od vašich profilů potřebovat nebudeme."
+      },
+      {
+        "question": "Co když chci inventuru, ale nejsem z gastra?",
+        "answer": "V případě, že podnikáte v jiném oboru než gastro, prosím, kontaktujte našeho obchodního zástupce přes kontaktní stránku na webu. Zavolejte mu nebo napište a probereme spolu, jaké jsou možnosti. Gastro-inventura je produkt určený pro gastro podniky, můžeme vám však nabídnout také jiné možnosti, které budou odpovídat vašim požadavkům."
+      },
+      {
+        "question": "Je to opravdu zdarma a bez závazků?",
+        "answer": "Ano. Jak s gastro-inventurou naložíte, je pouze na vás. Nejste ničím limitovaní ani se nám nezavazujete k žádné další spolupráci."
+      }
+    ]
   }
 }

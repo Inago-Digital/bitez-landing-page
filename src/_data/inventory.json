@@ -1,0 +1,134 @@
+[
+  {
+    "title": "Jak vyplnit profil?",
+    "badSolution": {
+      "title": "Špatné řešení",
+      "description": "Zaměnitelný profil bez informací.",
+      "image": {
+        "src": "./assets/images/how-to-fill-profile/bad-solution.png",
+        "alt": "Ukázka špatného řešení pro vyplnění profilu"
+      },
+      "points": [
+        "Špatný popis",
+        "Nevhodné profilové foto",
+        "Nepropojené odkazy",
+        "Bez adresy a kontaktů",
+        "Chybí výběry"
+      ]
+    },
+    "goodSolution": {
+      "title": "Správné řešení",
+      "description": "Návštěvník vás <b>snadno najde a pozná.</b>",
+      "image": {
+        "src": "./assets/images/how-to-fill-profile/good-solution.png",
+        "alt": "Ukázka správného řešení pro vyplnění profilu"
+      },
+      "points": [
+        "Správné profilové foto",
+        "Kategorie služeb",
+        "Popis podniku",
+        "URL a odkazy",
+        "Tlačítka a výběry"
+      ]
+    }
+  },
+  {
+    "title": "Jak na správné formáty?",
+    "badSolution": {
+      "title": "Špatné řešení",
+      "description": "Špatné formáty s minimálním dosahem.",
+      "image": {
+        "src": "./assets/images/good-formats/bad-solution.png",
+        "alt": "Ukázka špatného formátu příspěvků"
+      },
+      "points": [
+        "Špatné formáty",
+        "Chybí videa",
+        "Nepravidelná publikace",
+        "Nekvalitní fotografie",
+        "Žádná stories"
+      ]
+    },
+    "goodSolution": {
+      "title": "Správné řešení",
+      "description": "Formáty přinášejí <b>maximální dosah příspěvků</b>.",
+      "image": {
+        "src": "./assets/images/good-formats/good-solution.png",
+        "alt": "Ukázka správného formátu příspěvků"
+      },
+      "points": [
+        "Pravidelnost publikace",
+        "Správné formáty feed",
+        "Uložiště fotografií",
+        "Stories",
+        "Kvalita obsahu"
+      ]
+    }
+  },
+  {
+    "title": "Jak na ideální texty?",
+    "badSolution": {
+      "title": "Špatné řešení",
+      "description": "Texty, které nikoho nezaujmou.",
+      "image": {
+        "src": "./assets/images/ideal-texts/bad-solution.png",
+        "alt": "Ukázka špatného řešení pro texty"
+      },
+      "points": [
+        "Nezajímavé sdělení",
+        "Bez výzvy k akci",
+        "Chyby ve stylistice",
+        "Obecné hashtagy",
+        "Špatný výběr fotky"
+      ]
+    },
+    "goodSolution": {
+      "title": "Správné řešení",
+      "description": "Šťavnaté texty <b>s výzvou k akci.</b>",
+      "image": {
+        "src": "./assets/images/ideal-texts/good-solution.png",
+        "alt": "Ukázka správného řešení pro texty"
+      },
+      "points": [
+        "Jasné sdělení",
+        "Call to Action",
+        "Tone of Voice značky",
+        "Hashtagy a klíčová slova",
+        "Vhodná míra emojis"
+      ]
+    }
+  },
+  {
+    "title": "Jak na správnou grafiku?",
+    "badSolution": {
+      "title": "Špatné řešení",
+      "description": "Nepřehledná grafika bez identity.",
+      "image": {
+        "src": "./assets/images/good-graphic/bad-solution.png",
+        "alt": "Ukázka špatného řešení pro grafiku"
+      },
+      "points": [
+        "Nepřehledná grafika",
+        "Nevhodný formát",
+        "Špatná čitelnost",
+        "Chybí jednodná identita",
+        "Bez interaktivních prvků"
+      ]
+    },
+    "goodSolution": {
+      "title": "Správné řešení",
+      "description": "Interaktivní vizuál <b>v jednotné identitě</b>.",
+      "image": {
+        "src": "./assets/images/good-graphic/good-solution.png",
+        "alt": "Ukázka správného řešení pro grafiku"
+      },
+      "points": [
+        "Jednotná identita",
+        "Přehlednost grafiky",
+        "Informační grafiky",
+        "Grafické stories",
+        "Interaktivní stories"
+      ]
+    }
+  }
+]
