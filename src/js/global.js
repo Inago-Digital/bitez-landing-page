@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
       await fetch("https://email.hangerthem.com/send", {
         method: "POST",
         body: JSON.stringify({
-          to: data.email,
+          to: "adam@bitez.cz",
           name: data.name,
           email: data.email,
           message: htmlTemplate,
