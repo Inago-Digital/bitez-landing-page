@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const contactForm = document.querySelector("[data-contact-form]")
   const contactFormSubmit = document.querySelector("[data-contact-form-submit]")
   const contactFormInputs = document.querySelectorAll(
-    "[data-contact-form-input]"
+    "[data-contact-form-input]",
   )
 
   if (contactForm && contactFormSubmit) {
@@ -121,31 +121,21 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       try {
-        const response = await fetch("https://email.hangerthem.com/send", {
-          method: "POST",
-          body: JSON.stringify({
-            to: "adam@bitez.cz",
-            name: data.name,
-            email: data.email,
-            message:
-              htmlTemplate ||
-              `
-      Name: ${data.name}
-      Email: ${data.email}
-      Phone: ${data.phone}
-      `,
-            subject: "Nová zpráva z Bitez",
-            html: htmlTemplate || undefined,
-          }),
-          headers: {
-            "Content-Type": "application/json",
-          },
+        const response = await sendEmail({
+          subject: "Nová zpráva z Bitez",
+          text: `
+Dobrý den,
+
+obdrželi jsme nový lead od ${data.name} (${data.email}, ${data.phone}).
+`,
+          html: htmlTemplate || undefined,
         })
 
         if (response.ok) {
           alert("Message sent successfully.")
           contactForm.reset()
         } else {
+          console.error("Email sending failed:", response.statusText)
           alert("An error occurred. Please try again.")
         }
       } catch (error) {
@@ -160,19 +150,18 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Contact email template generator not loaded")
       }
 
-      await fetch("https://email.hangerthem.com/send", {
-        method: "POST",
-        body: JSON.stringify({
-          to: "adam@bitez.cz",
-          name: data.name,
-          email: data.email,
-          message: htmlTemplate,
-          subject: "Bitez - kontakt",
-          html: htmlTemplate || undefined,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
+      sendEmail({
+        to: data.email,
+        subject: "Děkujeme za kontaktování Bitez",
+        text: `
+Dobrý den ${data.name},
+
+děkujeme, že jste nás kontaktovali. Vaše zpráva nám byla úspěšně doručena a my se vám co nejdříve ozveme.
+
+S pozdravem,
+Tým Bitez
+`,
+        html: htmlTemplate || undefined,
       })
 
       contactFormSubmit.textContent = "Kontaktujte mě"
